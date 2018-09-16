@@ -19,7 +19,7 @@ and open the template in the editor.
     <div id='form'>
         <form>
         <div class="form-group">
-            
+            alter
          <h2><label for="exampleInputEmail1">Usuário</label></h2>
           <input type="email" class="form-control col-12" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
           <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
