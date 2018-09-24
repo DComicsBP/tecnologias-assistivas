@@ -1,4 +1,5 @@
 
-var Cidade = function(){
-    console.log('Cidade teste III'); 
+var Cidade = (data)=>{
+    console.log(data)
+    
 }

@@ -1,4 +1,4 @@
 
-var Estacoes = function (){
+var Estacoes =  ()=>{
     console.log('Estacoes teste II')
 }
