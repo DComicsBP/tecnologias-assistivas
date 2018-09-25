@@ -1,7 +1,7 @@
-// import * as itens  from './info-jogo.js';
-var Animais = ()=>{
-}
-const itens = [
+//var itens = require("./info-jogo");
+
+//console.log(itens)
+/*const itens = [
     {
       "ID":"01",
       "Title":"ONDE A BALEIA VIVE?", 
@@ -19,8 +19,7 @@ const itens = [
         } 
       }
     }
-  ];
-  
+];*/
   
 var questions = [];
 var question = "Teste maroto"
@@ -32,7 +31,7 @@ window.onload = function(){
     loadGames();
 }
 function loadGames() {
-   var questions  = itens; 
+   var questions  = teste; 
    
     console.log(questions)
 
@@ -64,4 +63,5 @@ function loadGames() {
         });
   }
 
-Animais();
+
+console.log(cube(3)); // 27

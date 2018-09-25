@@ -18,3 +18,10 @@ const teste = [
   }
 ];
 
+ 
+var cube = function(x) {
+  return x * x * x;
+}
+console.log(cube(5))
+//const foo = Math.PI + Math.SQRT2;
+ 
