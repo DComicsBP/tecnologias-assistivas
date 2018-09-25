@@ -17,7 +17,8 @@ function loadGames() {
         $("#principalImage").attr("src", function(){
             this.src = data[0].Image; 
                     console.log(data)
-        })
+        }); 
+        
 
       //document.getElementById("title").innerHTML = data[1].Title; 
        
