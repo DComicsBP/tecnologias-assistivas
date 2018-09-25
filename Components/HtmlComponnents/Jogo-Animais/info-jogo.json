@@ -2,6 +2,7 @@
   {
     "ID":"01",
     "Title":"Jogo01", 
+    "Imagem":"../../../Assets/Image/Animais/buffalo.png",
     "Opcoes":{
       "opA":{
         "NomeObjeto":"Nome do Objeto A", 
