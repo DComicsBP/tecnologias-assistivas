@@ -1,8 +1,12 @@
 var Animais =  ()=>{
     console.log('Teste Animais III')
+    loadGames();
+
 }
 var questions = [];
 var question = "Teste maroto"
+var imageSrc = null; 
+
 
 function loadGames() {
     $.getJSON("./info-jogo.json", function(data) {
@@ -10,19 +14,14 @@ function loadGames() {
           questions.push(element)
   
       });
-      document.getElementById("title").innerHTML = data[1].Title; 
+        $("#principalImage").attr("src", function(){
+            this.src = data[0].Image; 
+                    console.log(data)
+        })
+
+      //document.getElementById("title").innerHTML = data[1].Title; 
+       
     });
   }
-  debugger; 
-  loadGames();
-  console.log(questions)
   question = questions.toString();
-  $(document).ready(function() {
-    $('.gallerythumbnail').on('click', function() {
-        var img = $('<img />', {src    : '/Assets/Image/Animais/baleiaJubarte.png',
-                                'class': 'fullImage'
-                  });
-
-        $('.showimagediv').html(img).show();
-    });
-});
+Animais(); 
