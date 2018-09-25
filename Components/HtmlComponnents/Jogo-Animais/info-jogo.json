@@ -1,19 +1,19 @@
 [
   {
     "ID":"01",
-    "Title":"Jogo01", 
+    "Title":"Onde a Baleia Vive?", 
     "Image": "../../../Assets/Image/Animais/baleiaJubarte.png",
     "Opcoes":{
       "opA":{
         "NomeObjeto":"Nome do Objeto A", 
-        "Imagem": "imagem A",
+        "Imagem": "../../../Assets/Image/Animais/oceano.jpeg",
         "SomAnimal": "som A",
         "SomNarracao": "som A",
         "Flag": true
       }, 
       "opB":{
         "NomeObjeto":"Nome do Objeto B", 
-        "Imagem": "imagem B",
+        "Imagem": "../../../Assets/Image/Animais/selva.png",
         "SomAnimal": "som A",
         "SomNarracao": "som A",
         "Flag": false
