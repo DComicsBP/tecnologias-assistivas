@@ -1,13 +1,27 @@
 // import * as itens  from './info-jogo.js';
-import  * as itens  from './info-jogo.js';
-
 var Animais = ()=>{
-    console.log(itens)
 }
-
-Animais();
-/*
-: import declarations may only appear at top level of a module
+const itens = [
+    {
+      "ID":"01",
+      "Title":"ONDE A BALEIA VIVE?", 
+      "Image": "../../../Assets/Image/Animais/baleiaJubarte.png",
+      "Opcoes":{
+        "opA":{
+          "NomeObjeto":"a) OCEANO", 
+          "Imagem": "../../../Assets/Image/Animais/oceano.jpeg",
+          "Flag": true
+        }, 
+        "opB":{
+          "NomeObjeto":"b) SELVA", 
+          "Imagem": "../../../Assets/Image/Animais/selva.png",
+          "Flag": false
+        } 
+      }
+    }
+  ];
+  
+  
 var questions = [];
 var question = "Teste maroto"
 var imageSrc = null; 
@@ -18,17 +32,15 @@ window.onload = function(){
     loadGames();
 }
 function loadGames() {
-    $.getJSON("./info-jogo.json", function(data) {
-        data.forEach(element => {
-          questions.push(element)
-      });
-      console.log(questions)
+   var questions  = itens; 
+   
+    console.log(questions)
 
-      title = data[0].Title; 
-      opcaoA= data[0].Opcoes.opA
-      opcaoB = data[0].Opcoes.opB
+      title = questions[0].Title; 
+      opcaoA= questions[0].Opcoes.opA
+      opcaoB = questions[0].Opcoes.opB
         $("#principalImage").attr("src", function(){
-            this.src = data[0].Image; 
+            this.src = questions[0].Image; 
         }); 
 
         $("#titleA").attr("id", function(){
@@ -42,20 +54,14 @@ function loadGames() {
         });
 
         $("#opA").attr("id", function(){
-            // console.log('OpA IMAGEM ==> ', opcaoA.Imagem);
             const src = opcaoA.Imagem;
-            // console.log('SRC --> ', src);
-            // console.log('opA ==> ', this)
             this.src = src;
-        })
+        });
         $("#opB").attr("id", function(){
-            // console.log('opB ==> ', this)
-            // console.log('OPC B --> ', opcaoB.Imagem);
             const src = opcaoB.Imagem
             this.src = src;
             
-        })
-
-    });
+        });
   }
-  */
+
+Animais();

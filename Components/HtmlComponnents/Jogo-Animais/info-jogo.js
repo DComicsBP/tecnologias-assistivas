@@ -1,4 +1,4 @@
-const itens = [
+const teste = [
   {
     "ID":"01",
     "Title":"ONDE A BALEIA VIVE?", 
@@ -18,4 +18,3 @@ const itens = [
   }
 ];
 
-export default { itens }
