@@ -1,4 +1,4 @@
-[
+var teste = [
   {
     "ID":"01",
     "Title":"Jogo01", 

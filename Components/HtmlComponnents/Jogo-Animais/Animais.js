@@ -1,28 +1,45 @@
-var Animais =  ()=>{
-    console.log('Teste Animais III')
-}
+
 var questions = [];
 var question = "Teste maroto"
-
+var imageSrc = null; 
+var opcaoA; 
+var opcaoB;
+var title = null;  
+window.onload = function(){
+    loadGames();
+}
 function loadGames() {
-    $.getJSON("./info-jogo.json", function(data) {
-        data.forEach(element => {
-          questions.push(element)
-  
-      });
-      document.getElementById("title").innerHTML = data[1].Title; 
-    });
-  }
-  debugger; 
-  loadGames();
-  console.log(questions)
-  question = questions.toString();
-  $(document).ready(function() {
-    $('.gallerythumbnail').on('click', function() {
-        var img = $('<img />', {src    : '/Assets/Image/Animais/baleiaJubarte.png',
-                                'class': 'fullImage'
-                  });
+   var questions  = teste; 
+   
+    console.log(questions)
 
-        $('.showimagediv').html(img).show();
-    });
-});
+      title = questions[0].Title; 
+      opcaoA= questions[0].Opcoes.opA
+      opcaoB = questions[0].Opcoes.opB
+        $("#principalImage").attr("src", function(){
+            this.src = questions[0].Image; 
+        }); 
+
+        $("#titleA").attr("id", function(){
+            console.log('OpA ==> ',opcaoA.Imagem)
+            this.innerHTML = opcaoA.NomeObjeto
+        });
+
+        $("#titleB").attr("id", function(){
+            this.innerHTML = opcaoB.NomeObjeto
+
+        });
+
+        $("#opA").attr("id", function(){
+            const src = opcaoA.Imagem;
+            this.src = src;
+        });
+        $("#opB").attr("id", function(){
+            const src = opcaoB.Imagem
+            this.src = src;
+            
+        });
+  }
+
+
+console.log(cube(3)); // 27
