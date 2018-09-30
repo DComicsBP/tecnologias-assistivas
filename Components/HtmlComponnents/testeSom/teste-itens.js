@@ -1,29 +1,25 @@
 var itens = [
     {
       "ID":"01",
-      "Title":"Jogo01", 
-      "Imagem":"../../../Assets/Image/Animais/buffalo.png",
-      "Title":"Onde a Baleia Vive?", 
-      "Image": "../../../Assets/Image/Animais/baleiaJubarte.png",
+      "Imagem":"../../../Assets/Image/Transito/semáfaro.png",
+      "Title":"VOCÊ PODERÁ TRAVESSAR A RUA SE O SINAL ESTIVER COM QUE COR?", 
       "Opcoes":{
         "opA":{
-          "NomeObjeto":"Nome do Objeto A", 
-          "Imagem": "../../../Assets/Image/Animais/oceano.jpeg",
-          "SomAnimal": "som A",
-          "SomNarracao": "som A",
+          "NomeObjeto":"A) SINAL VERDE", 
+          "Imagem": "../../../Assets/Image/Transito/sinalAmarelo.jpg",
+          "SomNarracao": "sinalVerde",
           "Flag": true
         }, 
         "opB":{
-          "NomeObjeto":"Nome do Objeto B", 
-          "Imagem": "../../../Assets/Image/Animais/selva.png",
+          "NomeObjeto":"A) SINAL VERMELHO", 
+          "Imagem": "../../../Assets/Image/Transito/sinalVermelho.jpg",
           "SomAnimal": "som A",
           "SomNarracao": "som A",
           "Flag": false
         }, 
         "opC":{
-          "NomeObjeto":"Nome do Objeto C", 
-          "Imagem": "imagem C",
-          "SomAnimal": "som A",
+          "NomeObjeto":"SINAL AMARELO", 
+          "Imagem": "../../../Assets/Image/Transito/sinalAmarelo.jpg",
           "SomNarracao": "som A",
           "Flag": false
         }
