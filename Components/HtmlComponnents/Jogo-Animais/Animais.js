@@ -1,5 +1,3 @@
-var Animais = ()=>{
-
 
 var questions = [];
 var question = "Teste maroto"
@@ -10,26 +8,21 @@ var title = null;
 window.onload = function(){
     loadGames();
 }
-
 function loadGames() {
-    $.getJSON("./info-jogo.json", function(data) {
-        data.forEach(element => {
-          questions.push(element)
-      });
-      console.log(questions)
+   var questions  = jogo; 
+   
+    console.log(questions)
 
-      title = data[0].Title; 
-      opcaoA= data[0].Opcoes.opA
-      opcaoB = data[0].Opcoes.opB
+      title = questions[0].Title; 
+      opcaoA= questions[0].Opcoes.opA
+      opcaoB = questions[0].Opcoes.opB
         $("#principalImage").attr("src", function(){
-            this.src = data[0].Imagem
-            console.log(this); 
-            debugger;   
+            this.src = questions[0].Image; 
         }); 
 
         $("#titleA").attr("id", function(){
             console.log('OpA ==> ',opcaoA.Imagem)
-            this.src = opcaoA.NomeObjeto
+            this.innerHTML = opcaoA.NomeObjeto
         });
 
         $("#titleB").attr("id", function(){
@@ -38,23 +31,12 @@ function loadGames() {
         });
 
         $("#opA").attr("id", function(){
-            // console.log('OpA IMAGEM ==> ', opcaoA.Imagem);
             const src = opcaoA.Imagem;
-            // console.log('SRC --> ', src);
-            // console.log('opA ==> ', this)
             this.src = src;
-        })
+        });
         $("#opB").attr("id", function(){
-            // console.log('opB ==> ', this)
-            // console.log('OPC B --> ', opcaoB.Imagem);
             const src = opcaoB.Imagem
             this.src = src;
             
-        })
-
-    });
+        });
   }
-}
-
-Animais();
-
