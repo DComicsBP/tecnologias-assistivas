@@ -9,7 +9,7 @@ window.onload = function(){
     loadGames();
 }
 function loadGames() {
-   var questions  = jogo; 
+   var questions  = teste; 
    
     console.log(questions)
 
@@ -40,3 +40,6 @@ function loadGames() {
             
         });
   }
+
+
+console.log(cube(3)); // 27
