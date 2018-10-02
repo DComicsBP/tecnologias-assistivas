@@ -27,57 +27,52 @@ var itens = [
       }
     }, 
     {
-      "ID":"Jogo01",
-      "Imagem":"../../../../Assets/Image/Transito/semáfaro.png",
-      "Title":"VOCÊ PODE ATRAVESSAR A RUA SE O SINAL ESTIVER COM QUE COR?",
+      "ID":"Jogo02",
+      "Imagem":"../../../../Assets/Image/Transito/paradaBus.jpg",
+      "Title":"QUAL É A PLACA DA PARADA DE ÔNIBUS?",
       "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
       "Opcoes":{
         "opA":{
-          "NomeObjeto":"A) SINAL VERDE", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalVerde.jpg",
+          "NomeObjeto":"OPÇÃO A", 
+          "Imagem": "../../../../Assets/Image/Transito/areaPedestres.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
           "Flag": false
         }, 
         "opB":{
-          "NomeObjeto":"B) SINAL VERMELHO", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalVermelho.jpg",
+          "NomeObjeto":"OPÇÃO B", 
+          "Imagem": "../../../../Assets/Image/Transito/estacione.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
-          "Flag": true
+          "Flag": false
         }, 
         "opC":{
-          "NomeObjeto":" C) SINAL AMARELO", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
+          "NomeObjeto":"OPÇÃO C", 
+          "Imagem": "../../../../Assets/Image/Transito/paradaPlaca.png",
           "SomNarracao": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "Flag": false
+          "Flag": true
         }
   
       }
     }, 
     {
-      "ID":"Jogo01",
-      "Imagem":"../../../../Assets/Image/Transito/semáfaro.png",
-      "Title":"VOCÊ PODE ATRAVESSAR A RUA SE O SINAL ESTIVER COM QUE COR?",
+      "ID":"Jogo03",
+      "Imagem":"../../../../Assets/Image/Transito/ruaMovimentada.jpg",
+      "Title":"ONDE VOCÊ DEVE ATRAVESSAR A RUA?",
       "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
       "Opcoes":{
         "opA":{
-          "NomeObjeto":"A) SINAL VERDE", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalVerde.jpg",
+          "NomeObjeto":"A) FAIXA DE PEDESTRE", 
+          "Imagem": "../../../../Assets/Image/Transito/atravessarForaDaPista.jpg",
+          "ImgHeight":"",
+          "ImgWidth":"",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
-          "Flag": false
-        }, 
-        "opB":{
-          "NomeObjeto":"B) SINAL VERMELHO", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalVermelho.jpg",
-          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
           "Flag": true
         }, 
-        "opC":{
-          "NomeObjeto":" C) SINAL AMARELO", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "SomNarracao": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
+        "opB":{
+          "NomeObjeto":"B) EM QUALQUER PARTE DA RUA", 
+          "Imagem": "../../../../Assets/Image/Transito/atravessarForaDaFaixa.jpg",
+          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
           "Flag": false
         }
-  
       }
     }, 
     {
