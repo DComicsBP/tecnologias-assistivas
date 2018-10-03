@@ -1,11 +1,14 @@
-var regrasTransito = function () {
 var i = 0;
+var regrasTransito = function () {
+    $(".questionCard").on("mouseenter", function () {
+        var  audio = $(this).find("audio"); 
+        console.log(audio)
+         $(audio)[0].play()
+       
+     });
     var carregaDados = function () {
-        $(".questionCard").on("mouseenter", function () {
-            $("audio").attr("id", () => {
+      
 
-            });
-        });
         $("#questaoAudio").attr("id", function () {
             this.src = itens[i].Pergunta;
         });
@@ -49,8 +52,11 @@ var i = 0;
             $("#opCBox").hide();                
         }
        else{
-            $(".opC").attr("class", function (param) {
-                $("#opC").attr("id", function () {
+            $(".opC").attr("class", function () {
+                console.log('This ===>', this)
+               
+                $("#opC").attr("id", function ()    {
+
                     this.src = itens[i].Opcoes.opC.Imagem;
                 });
     
@@ -66,40 +72,39 @@ var i = 0;
         }
 
     }
-
-   
-
     this.init = function () {
+        
         carregaDados(); 
+        
     }
 
     init();
 }
 
-
 regrasTransito(); 
 
 var checkValue = function (element) {
     debugger; 
-    console.log(element); 
-    var valor; 
+
+    var valor = false; 
     if(element === 'opABox'){
-        valor = itens[2].Opcoes.opA.Flag;
+        valor = itens[i].Opcoes.opA.Flag;
     }
     else if(element === 'opBBox')
-        valor = itens[2].Opcoes.opB.Flag;
+        valor = itens[i].Opcoes.opB.Flag;
+
     else if(element === 'opCBox')
-        valor = itens[2].Opcoes.opC.Flag;
+        valor = itens[i].Opcoes.opC.Flag;
     else
         return; 
-   
+        
     if(!valor){
         $('#modalTitulo').attr('id', function(){ this.innerHTML = "Não foi dessa vez, tentenovamente!!";});
         $("#ImagemModal").attr("id", function(){this.src = "../../../../Assets/Image/DepoisDasRespostas/ramtaro.gif"});
     }
     if(valor){
         $('#modalTitulo').attr('id', function(){ this.innerHTML = "Parabéns, Muito Bem!!"});
-        $("#ImagemModal").attr("id", function(){this.src = "../../../../Assets/Image/DepoisDasRespostas/happydog.gif"});
+        $("#ImagemModal").attr("id", function(){this.src = "../../../../Assets/Image/DepoisDasRespostas/comemoracao01.gif"});
   
     }
     $('#myModal').modal('show');

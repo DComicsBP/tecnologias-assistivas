@@ -9,7 +9,9 @@ var itens = [
           "NomeObjeto":"A) SINAL VERDE", 
           "Imagem": "../../../../Assets/Image/Transito/sinalVerde.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
-          "Flag": false
+          "Flag": false, 
+          "width":100, 
+          "height":159
         }, 
         "opB":{
           "NomeObjeto":"B) SINAL VERMELHO", 
@@ -20,7 +22,7 @@ var itens = [
         "opC":{
           "NomeObjeto":" C) SINAL AMARELO", 
           "Imagem": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "SomNarracao": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
+          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opC.mp3",
           "Flag": false
         }
   
