@@ -1,13 +1,25 @@
 var i = 0;
+var arraySound  = [$ ("#opAAudio").attr("id"), $("#opBAudio").attr("id"), $("#opCAudio").attr("id"), $("#questaoAudio").attr("id") ];  
 var regrasTransito = function () {
+    var count = 0; 
     $(".questionCard").on("mouseenter", function () {
-        var  audio = $(this).find("audio"); 
-        console.log(audio)
-         $(audio)[0].play()
+        var isPaused = false; 
+            arraySound.forEach(element => {
+                var e = document.getElementById(element); 
+                if( e.paused === true){
+                    isPaused = true;   
+                    $(audio)[0].play(); 
+                }
+                count ++; 
+                if(count > arraySound.length){ isPaused = false; }
+                if(!isPaused) {
+                    
+                }
+            });
+        });
        
-     });
-    var carregaDados = function () {
-      
+ 
+ var carregaDados = function () {
 
         $("#questaoAudio").attr("id", function () {
             this.src = itens[i].Pergunta;

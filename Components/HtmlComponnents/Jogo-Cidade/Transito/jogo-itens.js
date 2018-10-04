@@ -23,7 +23,9 @@ var itens = [
           "NomeObjeto":" C) SINAL AMARELO", 
           "Imagem": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opC.mp3",
-          "Flag": false
+          "Flag": false,
+          "width":100, 
+          "height":159
         }
   
       }
@@ -38,19 +40,25 @@ var itens = [
           "NomeObjeto":"OPÇÃO A", 
           "Imagem": "../../../../Assets/Image/Transito/areaPedestres.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
-          "Flag": false
+          "Flag": false, 
+          "width":100, 
+          "height":159
         }, 
         "opB":{
           "NomeObjeto":"OPÇÃO B", 
           "Imagem": "../../../../Assets/Image/Transito/estacione.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
-          "Flag": false
+          "Flag": false, 
+          "width":100, 
+          "height":159
         }, 
         "opC":{
           "NomeObjeto":"OPÇÃO C", 
           "Imagem": "../../../../Assets/Image/Transito/paradaPlaca.png",
           "SomNarracao": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "Flag": true
+          "Flag": true, 
+          "width":100, 
+          "height":159
         }
   
       }
