@@ -75,13 +75,17 @@ var itens = [
           "ImgHeight":"",
           "ImgWidth":"",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
-          "Flag": true
+          "Flag": true, 
+          "width":100, 
+          "height":159
         }, 
         "opB":{
           "NomeObjeto":"B) EM QUALQUER PARTE DA RUA", 
           "Imagem": "../../../../Assets/Image/Transito/atravessarForaDaFaixa.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
-          "Flag": false
+          "Flag": true, 
+          "width":100, 
+          "height":159
         }
       }
     }, 
@@ -95,46 +99,25 @@ var itens = [
           "NomeObjeto":"A) SINAL VERDE", 
           "Imagem": "../../../../Assets/Image/Transito/sinalVerde.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
-          "Flag": false
+          "Flag": true, 
+          "width":100, 
+          "height":159
         }, 
         "opB":{
           "NomeObjeto":"B) SINAL VERMELHO", 
           "Imagem": "../../../../Assets/Image/Transito/sinalVermelho.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
-          "Flag": true
+          "Flag": true, 
+          "width":100, 
+          "height":159
         }, 
         "opC":{
           "NomeObjeto":" C) SINAL AMARELO", 
           "Imagem": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
           "SomNarracao": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "Flag": false
-        }
-  
-      }
-    }, 
-    {
-      "ID":"Jogo01",
-      "Imagem":"../../../../Assets/Image/Transito/semáfaro.png",
-      "Title":"VOCÊ PODE ATRAVESSAR A RUA SE O SINAL ESTIVER COM QUE COR?",
-      "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
-      "Opcoes":{
-        "opA":{
-          "NomeObjeto":"A) SINAL VERDE", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalVerde.jpg",
-          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
-          "Flag": false
-        }, 
-        "opB":{
-          "NomeObjeto":"B) SINAL VERMELHO", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalVermelho.jpg",
-          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
-          "Flag": true
-        }, 
-        "opC":{
-          "NomeObjeto":" C) SINAL AMARELO", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "SomNarracao": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "Flag": false
+          "Flag": true, 
+          "width":100, 
+          "height":159
         }
   
       }
@@ -149,19 +132,58 @@ var itens = [
           "NomeObjeto":"A) SINAL VERDE", 
           "Imagem": "../../../../Assets/Image/Transito/sinalVerde.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
-          "Flag": false
+          "Flag": true, 
+          "width":100, 
+          "height":159
         }, 
         "opB":{
           "NomeObjeto":"B) SINAL VERMELHO", 
           "Imagem": "../../../../Assets/Image/Transito/sinalVermelho.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
-          "Flag": true
+          "Flag": true, 
+          "width":100, 
+          "height":159
         }, 
         "opC":{
           "NomeObjeto":" C) SINAL AMARELO", 
           "Imagem": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
           "SomNarracao": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "Flag": false
+          "Flag": true, 
+          "width":100, 
+          "height":159
+        }
+  
+      }
+    }, 
+    {
+      "ID":"Jogo01",
+      "Imagem":"../../../../Assets/Image/Transito/semáfaro.png",
+      "Title":"VOCÊ PODE ATRAVESSAR A RUA SE O SINAL ESTIVER COM QUE COR?",
+      "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
+      "Opcoes":{
+        "opA":{
+          "NomeObjeto":"A) SINAL VERDE", 
+          "Imagem": "../../../../Assets/Image/Transito/sinalVerde.jpg",
+          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
+          "Flag": true, 
+          "width":100, 
+          "height":159
+        }, 
+        "opB":{
+          "NomeObjeto":"B) SINAL VERMELHO", 
+          "Imagem": "../../../../Assets/Image/Transito/sinalVermelho.jpg",
+          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
+          "Flag": true, 
+          "width":100, 
+          "height":159
+        }, 
+        "opC":{
+          "NomeObjeto":" C) SINAL AMARELO", 
+          "Imagem": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
+          "SomNarracao": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
+          "Flag": true, 
+          "width":100, 
+          "height":159
         }
   
       }
