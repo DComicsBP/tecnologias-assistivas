@@ -104,8 +104,6 @@ var regrasTransito = function (i) {
     init();
 }
 
-
-
 regrasTransito(j);
 
 var checkValue = function (element) {
