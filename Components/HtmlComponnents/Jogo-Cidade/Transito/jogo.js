@@ -4,12 +4,21 @@ var arraySound = [$("#opAAudio"), $("#opBAudio"), $("#opCAudio"), $("#questaoAud
 var regrasTransito = function () {
     var count = 0;
     $(".questionCard").on("mouseenter", function () {
-        var audio  = $(this).find("audio"); 
-        if($("audio")[0].paused){
+            var audio = $(this).find("audio");
+     if ($("#opAAudio")[0].paused && $("#opBAudio")[0].paused && $("#opCAudio")[0].paused && $("#questaoAudio")[0].paused) {
+            $(this).css('background-color', 'blue');
             $(audio)[0].play();
-        }
+        }   
 
     });
+    $(".questionCard").on("mouseleave", function () {
+        var audio = $(this).find("audio");
+        $(audio)[0].pause(); 
+        audio[0].currentTime = 0; 
+        $(this).css('background-color', 'white');
+
+    });
+   
     var carregaDados = function () {
 
         $("#questaoAudio").attr("id", function () {
