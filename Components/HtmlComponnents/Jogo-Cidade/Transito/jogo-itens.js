@@ -2,7 +2,7 @@ var itens = [
     {
       "ID":"Jogo01",
       "Imagem":"../../../../Assets/Image/Transito/semáfaro.png",
-      "Title":"VOCÊ PODE ATRAVESSAR A RUA SE O SINAL ESTIVER COM QUE COR?",
+      "Title":"VOCÊ SÓ PODERÁ ATRAVESSAR A RUA SE O SINAL ESTIVER COM QUE COR?",
       "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
       "Opcoes":{
         "opA":{
@@ -169,7 +169,7 @@ var itens = [
     {
       "ID":"Jogo01",
       "Imagem":"../../../../Assets/Image/Transito/semáfaro.png",
-      "Title":"VOCÊ PODE ATRAVESSAR A RUA SE O SINAL ESTIVER COM QUE COR?",
+      "Title":"VOCÊ  PODE ATRAVESSAR A RUA SE O SINAL ESTIVER COM QUE COR?",
       "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
       "Opcoes":{
         "opA":{
