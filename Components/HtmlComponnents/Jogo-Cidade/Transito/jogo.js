@@ -3,19 +3,14 @@ var arraySound  = [$ ("#opAAudio").attr("id"), $("#opBAudio").attr("id"), $("#op
 var regrasTransito = function () {
     var count = 0; 
     $(".questionCard").on("mouseenter", function () {
-        var isPaused = false; 
-            arraySound.forEach(element => {
-                var e = document.getElementById(element); 
-                if( e.paused === true){
-                    isPaused = true;   
-                    $(audio)[0].play(); 
-                }
-                count ++; 
-                if(count > arraySound.length){ isPaused = false; }
-                if(!isPaused) {
-                    
-                }
-            });
+        var isPaused = false;
+            debugger;  
+            var  audio = $(this).find("audio"); 
+            console.log(audio)
+             $(audio)[0].play()
+
+             console.log('AUDIO ===>',$(audio)) 
+
         });
        
  
