@@ -2,8 +2,8 @@ var itens = [
     {
       "ID":"Jogo01",
       "Imagem":"../../../../Assets/Image/Transito/semáfaro.png",
-      "Width": 100, 
-      "Height":100,
+      "Width": 200, 
+      "Height":300,
       "Title":"VOCÊ SÓ PODERÁ ATRAVESSAR A RUA SE O SINAL ESTIVER COM QUE COR?",
       "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
       "Opcoes":{
@@ -12,24 +12,24 @@ var itens = [
           "Imagem": "../../../../Assets/Image/Transito/sinalVerde.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
           "Flag": false, 
-          "width":100, 
-          "height":100
+          "width":70, 
+          "height":150
         }, 
         "opB":{
           "NomeObjeto":"B) SINAL VERMELHO", 
           "Imagem": "../../../../Assets/Image/Transito/sinalVermelho.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
           "Flag": true, 
-          "width":100, 
-          "height":100
+          "width":70, 
+          "height":150
         }, 
         "opC":{
           "NomeObjeto":" C) SINAL AMARELO", 
           "Imagem": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opC.mp3",
           "Flag": false,
-          "width":100, 
-          "height":100
+          "width":70, 
+          "height":150
         }
   
       }
@@ -37,8 +37,8 @@ var itens = [
     {
       "ID":"Jogo02",
       "Imagem":"../../../../Assets/Image/Transito/paradaBus.jpg",
-      "Width": 100, 
-      "Height":100,
+      "Width": 800, 
+      "Height":150,
       "Title":"QUAL É A PLACA DA PARADA DE ÔNIBUS?",
       "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
       "Opcoes":{

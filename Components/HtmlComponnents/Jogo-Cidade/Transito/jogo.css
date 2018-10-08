@@ -8,3 +8,8 @@ div {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 100%;
 }
+
+.card-img-top{
+    max-width: 1000 !important;
+    max-height: 1000 !important;
+}

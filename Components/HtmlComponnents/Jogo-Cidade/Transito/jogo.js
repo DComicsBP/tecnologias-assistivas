@@ -1,5 +1,5 @@
 var arraySound = [$("#opAAudio"), $("#opBAudio"), $("#opCAudio"), $("#questaoAudio")];
-var j = Math.floor(Math.random() * 3) + 0;
+var j = 0// Math.floor(Math.random() * 3) + 0;
 
 var regrasTransito = function (i) {
     var count = 0;
@@ -16,36 +16,28 @@ var regrasTransito = function (i) {
         audio[0].currentTime = 0;
         $(this).css('background-color', 'white');
     });
-
     var carregaDados = function (j) {
-
         $("#questaoAudio").attr("id", function () {
             this.src = itens[j].Pergunta;
-            this.width = itens[j].Width; 
-            this.width = itens[j].Height; 
-        });
-
+         });
         $("#title").attr("id", function () {
             this.innerHTML = itens[j].Title;
         });
         $("#principalImage").attr("id", function () {
             this.src = itens[j].Imagem;
-            this.width = itens[j].Opcoes.opB.width;
-            this.height = itens[j].Opcoes.opB.height;
-                
+            this.width = itens[j].Width; 
+            this.height = itens[j].Height; 
         });
         $(".opA").attr("class", function () {
 
             $("#opA").attr("id", function () {
                 this.src = itens[j].Opcoes.opA.Imagem;
                 this.width = itens[j].Opcoes.opA.width;
-                this.height = itens[j].Opcoes.opA.height;
-                
             });
 
             $("#titleA").attr("id", function () {
                 this.innerHTML = itens[j].Opcoes.opA.NomeObjeto;
-            })
+            });
             $("#opAAudio").attr("id", function () {
                 this.src = itens[j].Opcoes.opA.SomNarracao;
             });
@@ -126,6 +118,7 @@ var checkValue = function (element) {
     if (valor) {
         $('#modalTitulo').attr('id', function () { this.innerHTML = "Parabéns, Muito Bem!!" });
         $("#ImagemModal").attr("id", function () { this.src = "../../../../Assets/Image/DepoisDasRespostas/comemoracao01.gif" });
+   
     }
     $('#myModal').modal('show');
     setTimeout(function () {
