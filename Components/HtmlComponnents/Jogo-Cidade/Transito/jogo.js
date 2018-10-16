@@ -1,5 +1,5 @@
 var arraySound = [$("#opAAudio"), $("#opBAudio"), $("#opCAudio"), $("#questaoAudio")];
-var j = 0// Math.floor(Math.random() * 3) + 0;
+var j = 4//ath.floor(Math.random() * 3) + 0;
 
 var regrasTransito = function (i) {
     var count = 0;
@@ -18,15 +18,22 @@ var regrasTransito = function (i) {
     });
     var carregaDados = function (j) {
         $("#questaoAudio").attr("id", function () {
+            
             this.src = itens[j].Pergunta;
          });
         $("#title").attr("id", function () {
             this.innerHTML = itens[j].Title;
         });
         $("#principalImage").attr("id", function () {
-            this.src = itens[j].Imagem;
-            this.width = itens[j].Width; 
-            this.height = itens[j].Height; 
+            
+            if(itens[j].Imagem== ''){
+                $(this).hide()
+            }else{
+                this.src = itens[j].Imagem;
+                this.width = itens[j].Width; 
+                this.height = itens[j].Height;
+            }
+             
         });
         $(".opA").attr("class", function () {
 
