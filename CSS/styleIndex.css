@@ -4,3 +4,20 @@
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 100%;
 }
+
+#logo{
+    position: absolute;
+    top: 40px;
+    left:230px;
+    width:800px;
+    height:350px;
+    background-color: yellow;
+ }
+#jogos{
+    position:relative;
+    top:420px;
+    left:180px;
+    width: 1000px;
+    background-color:green;
+  }
+
