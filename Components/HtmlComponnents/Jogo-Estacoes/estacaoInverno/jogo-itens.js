@@ -1,35 +1,35 @@
 var itens = [
     {
       "ID":"Jogo01",
-      "Imagem":"../../../../Assets/Image/Transito/semáfaro.png",
+      "Imagem":"../../../../Assets/Image/Estacoes/imagem_sol.jpeg",
       "Width": 200, 
       "Height":300,
-      "Title":"QUAL ROUPA MAIS IDEAL PARA O INVERNO?",
+      "Title":"QUAL ROUPA SE USA NO VERÃO?",
       "Pergunta": "../../../../Assets/Audio/Estacoes/Jogo01/file.mp3", 
       "Opcoes":{
         "opA":{
           "NomeObjeto":"A) CAMISETA 1", 
           "Imagem": "../../../../Assets/Image/Estacoes/camiseta1.jpg",
           "SomNarracao": "../../../../Assets/Audio/Estacoes/Jogo01/file.mp3",
-          "Flag": false, 
-          "width":63, 
-          "height":150
+          "Flag": true, 
+          "width":160, 
+          "height":160
         }, 
         "opB":{
           "NomeObjeto":"B) BLUSÃO", 
           "Imagem": "../../../../Assets/Image/Estacoes/jaqueta.jpg",
           "SomNarracao": "../../../../Assets/Audio/Estacoes/Jogo01/file.mp3",
-          "Flag": true, 
-          "width":70, 
-          "height":150
+          "Flag": false, 
+          "width":160, 
+          "height":160
         }, 
         "opC":{
           "NomeObjeto":" C) CAMISETA 2", 
-          "Imagem": "../../../../Assets/Image/Estacoes/camiseta2.jpg",
+          "Imagem": "../../../../Assets/Image/Estacoes/jaqueta1.jpg",
           "SomNarracao": "../../../../Assets/Audio/Estacoes/Jogo01/file.mp3",
           "Flag": false,
-          "width":70, 
-          "height":150
+          "width":160, 
+          "height":160
         }
   
       }
@@ -37,81 +37,52 @@ var itens = [
      
     {
       "ID":"Jogo02",
-      "Imagem":"../../../../Assets/Image/Transito/paradaBus.jpg",
+      "Imagem":"../../../../Assets/Image/Estacoes/chuva.jpg",
       "Width": 100, 
       "Height":250,
-      "Title":"QUAL É A PLACA DA PARADA DE ÔNIBUS?",
-      "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
+      "Title":"O QUE DEVEMOS USAR PARA SE PREOTEGER DA CHUVA?",
+      "Pergunta": "../../../../Assets/Audio/Estacoes/Jogo02/questao.mp3", 
       "Opcoes":{
         "opA":{
           "NomeObjeto":"OPÇÃO A", 
-          "Imagem": "../../../../Assets/Image/Transito/areaPedestres.jpg",
-          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
-          "Flag": false, 
-          "width":190, 
+          "Imagem": "../../../../Assets/Image/Estacoes/guarda_chuva.jpg",
+          "SomNarracao": "../../../../Assets/Audio/Estacoes/Jogo02/opA.mp3",
+          "Flag": true, 
+          "width":200, 
           "height":200
         }, 
         "opB":{
           "NomeObjeto":"OPÇÃO B", 
-          "Imagem": "../../../../Assets/Image/Transito/estacione.jpg",
-          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
+          "Imagem": "../../../../Assets/Image/Estacoes/bone.jpg",
+          "SomNarracao": "../../../../Assets/Audio/Estacoes/Jogo02/opB.mp3",
           "Flag": false, 
-          "width":100, 
-          "height":100
+          "width":190, 
+          "height":200
         }, 
         "opC":{
           "NomeObjeto":"OPÇÃO C", 
-          "Imagem": "../../../../Assets/Image/Transito/paradaPlaca.png",
-          "SomNarracao": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "Flag": true, 
-          "width":100, 
-          "height":100
+          "Imagem": "../../../../Assets/Image/Estacoes/oculos.jpg",
+          "SomNarracao": "../../../../Assets/Audio/Estacoes/file.mp3",
+          "Flag": false, 
+          "width":190, 
+          "height":200
         }
   
       }
     },
 
     {
-      "ID":"Jogo03",
-      "Imagem":"../../../../Assets/Image/Transito/ruaMovimentada.jpg",
-      "Width": 500, 
-      "Height":300,
-      "Title":"ONDE VOCÊ DEVE ATRAVESSAR A RUA?",
-      "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
-      "Opcoes":{
-        "opA":{
-          "NomeObjeto":"A) FAIXA DE PEDESTRE", 
-          "Imagem": "../../../../Assets/Image/Transito/beatlesjpg.jpg",
-          "ImgHeight":"",
-          "ImgWidth":"",
-          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
-          "Flag": true, 
-          "width":250, 
-          "height":200
-        }, 
-        "opB":{
-          "NomeObjeto":"B) EM QUALQUER PARTE DA RUA", 
-          "Imagem": "../../../../Assets/Image/Transito/atravessarForaDaFaixa.jpg",
-          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
-          "Flag": false, 
-          "width":250, 
-          "height":160
-        }
-      }
-    },
-
-    {
-       "ID":"Jogo04",
+       "ID":"Jogo03",
       "Imagem":"../../../../Assets/Image/Estacoes/neve.jpg",
       "Width": 200, 
       "Height":300,
-      "Title":"QUAL ROUPA MAIS IDEAL PARA O INVERNO?",
-      "Pergunta": "../../../../Assets/Audio/Estacoes/Jogo01/file.mp3", 
+      "Title":"QUAL ROUPA SE USA NO INVERNO?",
+      "Pergunta": "../../../../Assets/Audio/Estacoes/Jogo04/file.mp3", 
       "Opcoes":{
         "opA":{
           "NomeObjeto":"A) CAMISETA 1", 
           "Imagem": "../../../../Assets/Image/Estacoes/camiseta1.jpg",
-          "SomNarracao": "../../../../Assets/Audio/Estacoes/Jogo01/file.mp3",
+          "SomNarracao": "../../../../Assets/Audio/Estacoes/Jogo04/file.mp3",
           "Flag": false, 
           "width":170, 
           "height":180
@@ -119,7 +90,7 @@ var itens = [
         "opB":{
           "NomeObjeto":"B) BLUSÃO", 
           "Imagem": "../../../../Assets/Image/Estacoes/jaqueta.jpg",
-          "SomNarracao": "../../../../Assets/Audio/Estacoes/Jogo01/file.mp3",
+          "SomNarracao": "../../../../Assets/Audio/Estacoes/Jogo04/file.mp3",
           "Flag": true, 
           "width":170, 
           "height":171
@@ -127,7 +98,7 @@ var itens = [
         "opC":{
           "NomeObjeto":" C) CAMISETA 2", 
           "Imagem": "../../../../Assets/Image/Estacoes/camiseta2.jpg",
-          "SomNarracao": "../../../../Assets/Audio/Estacoes/Jogo01/file.mp3",
+          "SomNarracao": "../../../../Assets/Audio/Estacoes/Jogo04/file.mp3",
           "Flag": false,
           "width":170, 
           "height":171
@@ -136,103 +107,4 @@ var itens = [
       }
     }, 
     
-    {
-      "ID":"Jogo05",
-      "Imagem":"",
-      "Width": 100, 
-      "Height":100,
-      "Title":"EXISTE UMA PLACA QUE PEDE PARA O MOTORISTA CUIDAR COM CRIANÇAS. QUE PLACA É ESSA?",
-      "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
-      "Opcoes":{
-        "opA":{
-          "NomeObjeto":"A) PLACA COM A IMAGEM DE UM BONECO", 
-          "Imagem": "../../../../Assets/Image/Transito/criancas.png",
-          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
-          "Flag": true, 
-          "width":200, 
-          "height":200
-        }, 
-        "opB":{
-          "NomeObjeto":"B) PLACA COM A IMAGEM DE UM BONECO EM CIMA DE LISTRAS", 
-          "Imagem": "../../../../Assets/Image/Transito/fixaSegurança.png",
-          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
-          "Flag": true, 
-          "width":175, 
-          "height":180
-        }
-  
-      }
-    },
-
-    {
-      "ID":"Jogo01",
-      "Imagem":"../../../../Assets/Image/Transito/semáfaro.png",
-      "Width": 100, 
-      "Height":100,
-      "Title":"VOCÊ  PODE ATRAVESSAR A RUA SE O SINAL ESTIVER COM QUE COR?",
-      "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
-      "Opcoes":{
-        "opA":{
-          "NomeObjeto":"A) SINAL VERDE", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalVerde.jpg",
-          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
-          "Flag": false,
-          "width":100, 
-          "height":100
-        }, 
-        "opB":{
-          "NomeObjeto":"B) SINAL VERMELHO", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalVermelho.jpg",
-          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
-          "Flag": true,
-          "width":100, 
-          "height":100
-        }, 
-        "opC":{
-          "NomeObjeto":" C) SINAL AMARELO", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "SomNarracao": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "Flag": false,
-          "width":100, 
-          "height":100
-        }
-  
-      }
-    },
-
-    {
-      "ID":"Jogo04",
-      "Imagem":"../../../../Assets/Image/Transito/semáfaro.png",
-      "Width": 100, 
-      "Height":100,
-      "Title":"VOCÊ PODE ATRAVESSAR A RUA SE O SINAL ESTIVER COM QUE COR?",
-      "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
-      "Opcoes":{
-        "opA":{
-          "NomeObjeto":"A) SINAL VERDE", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalVerde.jpg",
-          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opA.mp3",
-          "Flag": true, 
-          "width":100, 
-          "height":100
-        }, 
-        "opB":{
-          "NomeObjeto":"B) SINAL VERMELHO", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalVermelho.jpg",
-          "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
-          "Flag": true, 
-          "width":150, 
-          "height":100
-        }, 
-        "opC":{
-          "NomeObjeto":" C) SINAL AMARELO", 
-          "Imagem": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "SomNarracao": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "Flag": true, 
-          "width":150, 
-          "height":100
-        }
-  
-      }
-    }
   ]
