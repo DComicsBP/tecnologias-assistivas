@@ -18,7 +18,7 @@ var itens = [
                 "Imagem": [
 
                     { "ID": "01" },
-                    { "src": "../../../Assets/Image/Animais/baleiaJubarte.png" },
+                    { "src": "../../../Assets/Image/Animais/cachorro.png" },
                     { "width": "" },
                     { "height": "" },
                     { "narracao": "" },
@@ -28,7 +28,7 @@ var itens = [
             {
                 "Imagem": [
                     { "ID": "03" },
-                    { "src": "../../../Assets/Image/Animais/baleiaJubarte.png" },
+                    { "src": "../../../Assets/Image/Animais/carneiro.png" },
                     { "width": "" },
                     { "height": "" },
                     { "narracao": "" },
@@ -38,7 +38,7 @@ var itens = [
             {
                 "Imagem": [
                     { "ID": "04" },
-                    { "src": "../../../Assets/Image/Animais/baleiaJubarte.png" },
+                    { "src": "../../../Assets/Image/Animais/cavalo.png" },
                     { "narracao": "" },
                     { "width": "" },
                     { "height": "" },
@@ -55,7 +55,7 @@ var itens = [
                         "op": [
                             
                             { "src": "../../../Assets/Image/Animais/buffalo.png" },
-                            { "flag": true },
+                            { "flag": false },
                             { "width": "" },
                             { "height": "" },
                             { "narracao": "" },
@@ -66,8 +66,8 @@ var itens = [
                     {
                         "op": [
 
-                            { "src": "../../../Assets/Image/Animais/buffalo.png" },
-                            { "flag": false },
+                            { "src": "../../../Assets/Image/Animais/baleiaJubarte.png" },
+                            { "flag": true },
                             { "width": "" },
                             { "height": "" },
                             { "narracao": "" },
@@ -84,7 +84,7 @@ var itens = [
                     {
                         "op": [
 
-                            { "src": "../../../Assets/Image/Animais/cachorro.png" },
+                            { "src": "../../../Assets/Image/Animais/buffalo.png" },
                             { "flag": false },
                             { "width": "" },
                             { "height": "" },
@@ -108,6 +108,66 @@ var itens = [
                     
                 ], 
                 "class":"grupoB"
+            },
+            {
+                "opcoes": [
+                    {
+                        "op": [
+
+                            { "src": "../../../Assets/Image/Animais/baleiaJubarte.png" },
+                            { "flag": false },
+                            { "width": "" },
+                            { "height": "" },
+                            { "narracao": "" },
+                            { "id": "op3A" },
+
+                        ]
+                    },
+                    {
+                        "op": [
+
+                            { "src": "../../../Assets/Image/Animais/carneiro.png" },
+                            { "flag": true },
+                            { "width": "" },
+                            { "height": "" },
+                            { "narracao": "" },
+                            { "narracao": "op3B" },
+
+                        ]
+                    }
+                    
+                ], 
+                "class":"grupoC"
+            },
+            {
+                "opcoes": [
+                    {
+                        "op": [
+
+                            { "src": "../../../Assets/Image/Animais/cavalo.png" },
+                            { "flag": true },
+                            { "width": "" },
+                            { "height": "" },
+                            { "narracao": "" },
+                            { "id": "op4A" },
+
+                        ]
+                    },
+                    {
+                        "op": [
+
+                            { "src": "../../../Assets/Image/Animais/cachorro.png" },
+                            { "flag": false },
+                            { "width": "" },
+                            { "height": "" },
+                            { "narracao": "" },
+                            { "narracao": "op4B" },
+
+                        ]
+                    }
+                    
+                ], 
+                "class":"grupoD"
             }
 
         ]

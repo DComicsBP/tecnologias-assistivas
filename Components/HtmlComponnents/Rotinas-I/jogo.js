@@ -29,45 +29,27 @@ var rotinas = function (j) {
         }
         dados += `</div>`;
 
-        for (let k = 0; k < element.grupos.length; k++) {
-            const ops = element.grupos[k];
-            opcoes += `<div class="${ops.class}">`;
 
-            for (let l = 0; l < ops.opcoes.length; l++) {
-                count++;
-                const op = ops.opcoes[l];
-
-                console.log('Element', ops)
-                opcoes += `<a href='#' class="${ops.class}" id="${op.op[5].id}" data="${op.op[1].flag}">`
-                opcoes += `<div >`;
-                opcoes += `<h4>`;
-                opcoes += count;
-                opcoes += `</h4>`;
-                opcoes += `<img src="${op.op[0].src}" alt="">`;
-                opcoes += `</div>`;
-                opcoes += `</a>`;
-
-            }
-            opcoes += `</div>`;
-
-
-        }
 
     }
 
     this.init = function () {
         carregaDados(j);
-        $(".opcoes").append(opcoes);
 
         $(".sequencia").append(dados);
         $(".grupoB").hide();
 
-
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('#sequencia').hide();
+            }, 7000);
+        });
+       // $("#sequencia").removeClass("preload");
     }
 
     init();
 }
-
+    ;
 rotinas(j);
 
 $("a").attr('class', function () {
