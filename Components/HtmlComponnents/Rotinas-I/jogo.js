@@ -14,13 +14,13 @@ var rotinas = function (j) {
         const element = itens[j];
 
         for (let k = 0; k < element.Imagens.length; k++) {
-            
+
             const images = element.Imagens[k];
-            
+
             for (let x = 0; x < images.Imagem.length; x++) {
-                
+
                 const image = images.Imagem[x];
-                
+
                 dados += `<div id="${image.ID}">`
                 dados += `<audio src="${image.narracao}"></audio>`
                 dados += ` <img src="${image.src}" alt="">`;
@@ -73,29 +73,34 @@ var rotinas = function (j) {
 rotinas(j);
 
 $("a").attr('class', function () {
+
     $(this).on("click", function () {
-        if($(this).attr('class') === 'grupoA'){
-            if($(this).attr('data') === 'true'){
+        var flag = $(this).attr('data');
+        if ($(this).attr('class') === 'grupoA') {
+            if (flag === 'true') {
                 $(".sequencia").append(this.innerHTML)
                 $(".grupoB").show();
                 $(".grupoA").hide();
 
             }
-        }else{
-            $(".sequencia").append(this.innerHTML)
-            $(".grupoB").hide();
-               
+        } else {
+            if (flag === 'true') {
+                $(".sequencia").append(this.innerHTML)
+                $(".grupoB").hide();
+            }
+
+
         }
 
     });
 });
 
-    $(".grupoB").attr('class', function () {
-        $(this).on("click", function () {
-            debugger;
-            console.log('THIS ==>', this)
-        });
+$(".grupoB").attr('class', function () {
+    $(this).on("click", function () {
+        debugger;
+        console.log('THIS ==>', this)
     });
+});
 
 
 
