@@ -1,5 +1,5 @@
 var arraySound = [$("#opAAudio"), $("#opBAudio"), $("#opCAudio"), $("#questaoAudio")];
-var j = 3//ath.floor(Math.random() * 3) + 0;
+var j = 4//ath.floor(Math.random() * 3) + 0;
 
 var regrasTransito = function (i) {
     var count = 0;
@@ -9,7 +9,7 @@ var regrasTransito = function (i) {
             $(this).css('background-color', 'blue');
             $(audio)[0].play();
         }
-    });
+    }); 
     $(".questionCard").on("mouseleave", function () {
         var audio = $(this).find("audio");
         $(audio)[0].pause();
