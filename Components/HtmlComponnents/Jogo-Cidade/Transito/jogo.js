@@ -1,5 +1,5 @@
 var arraySound = [$("#opAAudio"), $("#opBAudio"), $("#opCAudio"), $("#questaoAudio")];
-var j = 3//ath.floor(Math.random() * 3) + 0;
+var j = 2//ath.floor(Math.random() * 3) + 0;
 
 var regrasTransito = function (i) {
     var count = 0;
