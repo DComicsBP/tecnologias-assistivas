@@ -5,7 +5,7 @@ var itens = [
       "Width": 200, 
       "Height":300,
       "Title":"VOCÊ SÓ PODERÁ ATRAVESSAR A RUA SE O SINAL ESTIVER COM QUE COR?",
-      "Pergunta": "../../../../Assets/Audio/Transito/Jogo01/questao.mp3", 
+      "Pergunta": "../../../../Assets/Audio/Transito/partida01/questao.m4a", 
       "Opcoes":{
         "opA":{
           "NomeObjeto":"A) SINAL VERDE", 
@@ -120,7 +120,7 @@ var itens = [
           "NomeObjeto":"B) PLACA ESCRITO 'PARE'. ", 
           "Imagem": "../../../../Assets/Image/Transito/pare.jpg",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
-          "Flag": true, 
+          "Flag": false, 
           "width":120, 
           "height":130
         }, 
@@ -128,7 +128,7 @@ var itens = [
           "NomeObjeto":" C) PLACA DE CUIDADO COM A LOMBADA", 
           "Imagem": "../../../../Assets/Image/Transito/lombada.jpg",
           "SomNarracao": "../../../../Assets/Image/Transito/sinalAmarelo.jpg",
-          "Flag": true, 
+          "Flag": false, 
           "width":120, 
           "height":130
         }
@@ -156,7 +156,7 @@ var itens = [
           "NomeObjeto":"B) PLACA COM A IMAGEM DE UM BONECO EM CIMA DE LISTRAS", 
           "Imagem": "../../../../Assets/Image/Transito/fixaSegurança.png",
           "SomNarracao": "../../../../Assets/Audio/Transito/Jogo01/opB.mp3",
-          "Flag": true, 
+          "Flag": false, 
           "width":175, 
           "height":180
         }
