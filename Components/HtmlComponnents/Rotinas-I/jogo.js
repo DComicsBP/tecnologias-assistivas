@@ -67,6 +67,7 @@ $("a").attr('class', function () {
             if (flag === 'true') {
                 $(".sequencia").append(this.innerHTML)
                 $(".grupoB").hide();
+             
             }
 
 

@@ -9,7 +9,7 @@ var rotinas = function (j) {
 
     var carregaDados = function (j) {
 
-        dados += `<div class="opcoes", id="${itens[j].ID}">`;
+        dados += `<div id="${itens[j].ID}">`;
 
         const element = itens[j];
 
@@ -17,38 +17,32 @@ var rotinas = function (j) {
 
             const images = element.Imagens[k];
 
-            for (let x = 0; x < images.Imagem.length; x++) {
-
-                const image = images.Imagem[x];
-
-                dados += `<div id="${image.ID}">`
-                dados += `<audio src="${image.narracao}"></audio>`
-                dados += ` <img src="${image.src}" alt="">`;
-                dados += `</div>`
-            }
+                dados += `<div class="" id="${images.Imagem.ID}">`;
+                dados += `<audio src="${images.Imagem.narracao}"></audio>`;
+                dados += ` <img src="${images.Imagem.src}" alt="">`;
+                dados += `</div>`;
         }
         dados += `</div>`;
 
         for (let k = 0; k < element.grupos.length; k++) {
             const ops = element.grupos[k];
-            opcoes += `<div class="${ops.class}">`;
 
             for (let l = 0; l < ops.opcoes.length; l++) {
                 count++;
                 const op = ops.opcoes[l];
-
-                console.log('Element', ops)
-                opcoes += `<a href='#' class="${ops.class}" id="${op.op[5].id}" data="${op.op[1].flag}">`
-                opcoes += `<div >`;
-                opcoes += `<h4>`;
-                opcoes += count;
-                opcoes += `</h4>`;
-                opcoes += `<img src="${op.op[0].src}" alt="">`;
-                opcoes += `</div>`;
+                debugger; 
+                opcoes += `<div class="${ops.class}">`;
+                opcoes += `<a href='#' class="${ops.class}" id="${op.op.id}" data="${op.op.flag}" onclick="remove(event)">`
+                opcoes +=   `<div data="data="${op.op.flag}">`;
+                opcoes +=       `<h4>`;
+                opcoes +=           count;
+                opcoes +=       `</h4>`;
+                opcoes +=       `<img src="${op.op.src}" alt="">`;
+                opcoes +=   `</div>`;
                 opcoes += `</a>`;
+                opcoes += `</div>`;
 
             }
-            opcoes += `</div>`;
 
 
         }
@@ -56,13 +50,13 @@ var rotinas = function (j) {
     }
 
     this.init = function () {
+            
+        
         carregaDados(j);
-        $(".opcoes").append(opcoes);
+            render(); 
 
-        $(".sequencia").append(dados);
-        $(".grupoB").hide();
-
-
+            j++; 
+    
     }
 
     init();
@@ -70,25 +64,43 @@ var rotinas = function (j) {
 
 rotinas(j);
 
-$("a").attr('class', function () {
+ function render(j){
+     
+    $(".opcoes").append(opcoes);
+    $(".sequencia").append(dados);
+    $(".grupoB").hide();
 
-    $(this).on("click", function () {
-        var flag = $(this).attr('data');
-        if ($(this).attr('class') === 'grupoA') {
-            if (flag === 'true') {
-                $(".sequencia").append(this.innerHTML)
-                $(".grupoB").show();
-                $(".grupoA").hide();
+}
 
-            }
-        } else {
-            if (flag === 'true') {
-                $(".sequencia").append(this.innerHTML)
-                $(".grupoB").hide();
-            }
+function remove(event){
+    console.log('Event ===> ', event)
+    debugger; 
+    var flag =  $("#"+event.path[2].id).attr("data");
 
+    if ($("#"+event.path[2].id).attr("class") === 'grupoA') {
+        if (flag === 'true') {
+            $(".sequencia").append(event.currentTarget.innerHTML);
+            $(".grupoB").show();
+            $(".grupoA").hide();
 
         }
+    } else {
+        if (flag === 'true') {
+            $(".sequencia").append(event.currentTarget.innerHTML)
+            opcoes = ""; 
+            dados = "";  
 
-    });
-});
+            $(".grupoA").show();
+            $(".grupoB").show();
+            $(".grupoA").remove();
+            $(".grupoB").remove();
+
+            $(".sequencia").empty();
+            init(j); 
+        }
+
+
+    }
+
+}
+
