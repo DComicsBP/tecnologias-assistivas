@@ -1,11 +1,8 @@
 var j = 0//ath.floor(Math.random() * 3) + 0;
-var count = 0;
 var dados = '';
 var opcoes = '';
 
 var rotinas = function (j) {
-    var count = 0;
-
 
     var carregaDados = function (j) {
 
@@ -28,14 +25,11 @@ var rotinas = function (j) {
             const ops = element.grupos[k];
 
             for (let l = 0; l < ops.opcoes.length; l++) {
-                count++;
                 const op = ops.opcoes[l];
-                debugger; 
                 opcoes += `<div class="${ops.class}">`;
                 opcoes += `<a href='#' class="${ops.class}" id="${op.op.id}" data="${op.op.flag}" onclick="remove(event)">`
                 opcoes +=   `<div data="data="${op.op.flag}">`;
                 opcoes +=       `<h4>`;
-                opcoes +=           count;
                 opcoes +=       `</h4>`;
                 opcoes +=       `<img src="${op.op.src}" alt="">`;
                 opcoes +=   `</div>`;
@@ -73,8 +67,7 @@ rotinas(j);
 }
 
 function remove(event){
-    console.log('Event ===> ', event)
-    debugger; 
+    console.log('Event ===> ', event);
     var flag =  $("#"+event.path[2].id).attr("data");
 
     if ($("#"+event.path[2].id).attr("class") === 'grupoA') {
@@ -86,7 +79,7 @@ function remove(event){
         }
     } else {
         if (flag === 'true') {
-            $(".sequencia").append(event.currentTarget.innerHTML)
+            $(".sequencia").append(event.currentTarget.innerHTML);
             opcoes = ""; 
             dados = "";  
 
