@@ -43,7 +43,7 @@ var itens = [
                     {
                         
                         "op": {
-                            "src": "../../../Assets/Image/Rotina/Entrada/escaninho.jpg" ,
+                            "src": "../../../Assets/Image/Rotina/Entrada/salas.jpeg" ,
                             "flag": true ,
                             "width": "100" ,
                             "height": "100" ,

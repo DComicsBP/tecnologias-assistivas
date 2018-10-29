@@ -12,32 +12,37 @@ var rotinas = function (j) {
         for (let k = 0; k < element.Imagens.length; k++) {
 
             const images = element.Imagens[k];
+      
 
-                dados += `<div class="" id="${images.Imagem.ID}" class="col-xs-6">`;
+                dados += `<div class="col-sm-2" id="${images.Imagem.ID}">`;
+                dados += `<div class="card" id="${images.Imagem.ID}">`;
+                dados += `<div class="card-body">`;
                 dados += `<audio src="${images.Imagem.narracao}"></audio>`;
                 dados += ` <img src="${images.Imagem.src}"  height="${images.Imagem.height}" width="${images.Imagem.width}" alt="">`;
                 dados += `</div>`;
+                dados += `</div>`;
+                dados += `</div>`;
+
         }
-        dados += `</div>`;
 
         for (let k = 0; k < element.grupos.length; k++) {
             const ops = element.grupos[k];
-            opcoes += `<div class="row">`;
             
             for (let l = 0; l < ops.opcoes.length; l++) {
                 const op = ops.opcoes[l];
-                opcoes += `<div class="${ops.class} col-xs-6">`;
+                opcoes += `<div class="${ops.class} col-sm-2">`;
+                opcoes+= `<div class="card"> `;
+                opcoes+= `<div class="card-body"> `;
                 opcoes += `<a href='#' class="${ops.class}" id="${op.op.id}" data="${op.op.flag}" onclick="remove(event)">`
                 opcoes +=   `<div data="${op.op.flag}">`;
-                opcoes +=       `<h4>`;
-                opcoes +=       `</h4>`;
                 opcoes +=       `<img src="${op.op.src}" alt="${op.op.descricao}" height="${op.op.height}" width="${op.op.width}">`;
                 opcoes +=   `</div>`;
                 opcoes += `</a>`;
                 opcoes += `</div>`;
+                opcoes += `</div>`;
+                opcoes += `</div>`;
 
             }
-            opcoes += `</div>`;
         }
     }
 
