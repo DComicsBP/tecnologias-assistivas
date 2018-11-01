@@ -1,5 +1,5 @@
 var arraySound = [$("#opAAudio"), $("#opBAudio"), $("#opCAudio"), $("#questaoAudio")];
-var j = 3//ath.floor(Math.random() * 3) + 0;
+var j = 2//ath.floor(Math.random() * 3) + 0;
 
 var regrasTransito = function (i) {
     var count = 0;
@@ -121,19 +121,21 @@ var checkValue = function (element) {
     if (!valor) {
         $('#modalTitulo').attr('id', function () { this.innerHTML = "Não foi dessa vez, tentenovamente!!"; });
         $("#ImagemModal").attr("id", function () { this.src = "../../../../Assets/Image/DepoisDasRespostas/ramtaro.gif" });
+        $('#myModal').modal('show');
+        setTimeout(function () {
+            $('#myModal1').modal('hide')
+        }, 2000);
     }
     if (valor) {
         $('#modalTitulo').attr('id', function () { this.innerHTML = "Parabéns, Muito Bem!!" });
         $("#ImagemModal").attr("id", function () { this.src = "../../../../Assets/Image/DepoisDasRespostas/comemoracao01.gif" });
-   
+        $('#myModal').modal('show');
+        carregaDados(j);
+            j++;
+        setTimeout(function () {
+            $('#myModal1').modal('hide')
+        }, 2000);
+            
     }
-    $('#myModal').modal('show');
-    setTimeout(function () {
-       
-
-        $('#myModal1').modal('hide')
-        i = 2; 
-        carregaDados(i);
-    }, 2000);
-
+ 
 }
