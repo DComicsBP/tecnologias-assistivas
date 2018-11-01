@@ -2,50 +2,6 @@ var itens = [
     {
         "ID": "JOGO01",
         "narracao": "",
-<<<<<<< HEAD
-        "descricao": "",
-        "Imagens": [
-            {
-                "Imagem": [
-                    { "ID": "01" },
-                    { "src": "../../../Assets/Image/Animais/baleiaJubarte.png" },
-                    { "width": "" },
-                    { "height": "" },
-                    { "narracao": "" },
-                    { "descricao": "" }
-                ]
-            },
-            {
-                "Imagem": [
-
-                    { "ID": "01" },
-                    { "src": "../../../Assets/Image/Animais/baleiaJubarte.png" },
-                    { "width": "" },
-                    { "height": "" },
-                    { "narracao": "" },
-                    { "descricao": "" }
-                ]
-            },
-            {
-                "Imagem": [
-                    { "ID": "03" },
-                    { "src": "../../../Assets/Image/Animais/baleiaJubarte.png" },
-                    { "width": "" },
-                    { "height": "" },
-                    { "narracao": "" },
-                    { "descricao": "" }
-                ]
-            },
-            {
-                "Imagem": [
-                    { "ID": "04" },
-                    { "src": "../../../Assets/Image/Animais/baleiaJubarte.png" },
-                    { "narracao": "" },
-                    { "width": "" },
-                    { "height": "" },
-                    { "descricao": "" }
-                ]
-=======
         "descricao": "QUANDO VOCÊ CHEGA NA ESCOLA VOCÊ ESPERA O SEU COLEGA, SE DESPEDE DA MAMÃE, VAI PARA A SALA DE AULA COM A PROFESSORA. DEPOIS VOCÊ",
         "Imagens": [
             {
@@ -195,7 +151,6 @@ var itens = [
                     "narracao": "" ,
                     "descricao": "" 
                 }
->>>>>>> Daione
             }
         ],
 
@@ -204,30 +159,6 @@ var itens = [
                 
                 "opcoes": [
                     {
-<<<<<<< HEAD
-                        "op": [
-                            
-                            { "src": "../../../Assets/Image/Animais/buffalo.png" },
-                            { "flag": true },
-                            { "width": "" },
-                            { "height": "" },
-                            { "narracao": "" },
-                            { "id": "op1A" },
-
-                        ]
-                    },
-                    {
-                        "op": [
-
-                            { "src": "../../../Assets/Image/Animais/buffalo.png" },
-                            { "flag": false },
-                            { "width": "" },
-                            { "height": "" },
-                            { "narracao": "" },
-                            { "id": "op1B" },
-
-                        ]
-=======
                         "op": {
                             
                             "src": "../../../Assets/Image/Animais/elefante.png" ,
@@ -249,39 +180,11 @@ var itens = [
                             "id": "op1B",
 
                         }
->>>>>>> Daione
                     },
                     
                 ], 
                     "class":"grupoA"
             }, 
-<<<<<<< HEAD
-            {
-                "opcoes": [
-                    {
-                        "op": [
-
-                            { "src": "../../../Assets/Image/Animais/cachorro.png" },
-                            { "flag": false },
-                            { "width": "" },
-                            { "height": "" },
-                            { "narracao": "" },
-                            { "id": "op2A" },
-
-                        ]
-                    },
-                    {
-                        "op": [
-
-                            { "src": "../../../Assets/Image/Animais/cachorro.png" },
-                            { "flag": true },
-                            { "width": "" },
-                            { "height": "" },
-                            { "narracao": "" },
-                            { "narracao": "op2B" },
-
-                        ]
-=======
 
             {
                 "opcoes": [
@@ -308,7 +211,6 @@ var itens = [
                             "id": "op2B",
 
                         }
->>>>>>> Daione
                     }
                     
                 ], 
@@ -317,8 +219,6 @@ var itens = [
 
         ]
     },
-<<<<<<< HEAD
-=======
 
     {
         "ID": "JOGO01",
@@ -430,6 +330,5 @@ var itens = [
         ]
     }
 
->>>>>>> Daione
     
 ]
