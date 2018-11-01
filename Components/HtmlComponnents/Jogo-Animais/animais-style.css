@@ -1,0 +1,13 @@
+.nav-principal {
+    background-color:rgb(212, 237, 218) !important;
+    font-color: rgb(255, 255, 255) !important;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 100%;
+}
+
+#div-content{
+    position: relative;
+    width: 100%;
+    top: 100px; 
+
+}

@@ -1,0 +1,15 @@
+.card-img-top{
+    width:"50%" !important;
+    height:"100" !important;
+}
+
+div {
+    font-color: rgb(255, 255, 255) !important;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 100%;
+}
+
+.card-img-top{
+    max-width: 1000 !important;
+    max-height: 1000 !important;
+}
