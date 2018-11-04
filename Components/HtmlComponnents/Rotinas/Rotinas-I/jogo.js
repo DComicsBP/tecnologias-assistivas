@@ -21,10 +21,15 @@ var rotinas = function (j) {
 
                 const image = images.Imagem[x];
 
-                dados += `<div id="${image.ID}">`
-                dados += `<audio src="${image.narracao}"></audio>`
-                dados += ` <img src="${image.src}" alt="">`;
-                dados += `</div>`
+                    dados+=`<div class="row" id="${image.ID}">`
+                    dados+=    `<div class="col-sm-3">`
+                    dados+=      `<div class="card">`
+                    dados+=        `<div class="card-body">`
+                    dados+=          `<img src="${image.src}" width="150" height="200" alt="">`
+                    dados+=          `<audio src="${image.narracao}"></audio>` 
+                    dados+=        `</div>`
+                    dados+=      `</div>`      
+                    dados+=    `</div>`     
             }
         }
         dados += `</div>`;

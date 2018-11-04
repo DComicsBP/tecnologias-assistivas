@@ -7,7 +7,7 @@ var itens = [
             {
                 "Imagem": {
                      "ID": "01" ,
-                     "src": "../../../Assets/Image/Rotina/Entrada/Entrada.jpg" ,
+                     "src": "../../../../Assets/Image/Rotina/Entrada/Entrada.jpg" ,
                      "width": "100" ,
                      "height": "100" ,
                      "narracao": "" ,
@@ -17,7 +17,7 @@ var itens = [
             {
                 "Imagem": {
                     "ID": "02" ,
-                    "src": "../../../Assets/Image/Rotina/Entrada/tchau a mamae.jpeg" ,
+                    "src": "../../../../Assets/Image/Rotina/Entrada/tchau a mamae.jpeg" ,
                     "width": "100" ,
                     "height": "100" ,
                     "narracao": "" ,
@@ -27,7 +27,7 @@ var itens = [
             {
                 "Imagem": {
                     "ID": "03" ,
-                    "src": "../../../Assets/Image/Rotina/Entrada/salas.jpeg" ,
+                    "src": "../../../../Assets/Image/Rotina/Entrada/salas.jpeg" ,
                     "width": "100" ,
                     "height": "100" ,
                     "narracao": "" ,
@@ -43,7 +43,7 @@ var itens = [
                     {
                         
                         "op": {
-                            "src": "../../../Assets/Image/Rotina/Entrada/salas.jpeg" ,
+                            "src": "../../../../Assets/Image/Rotina/Entrada/salas.jpeg" ,
                             "flag": true ,
                             "width": "100" ,
                             "height": "100" ,
@@ -55,7 +55,7 @@ var itens = [
                     {
                         "op": {
 
-                            "src": "../../../Assets/Image/Rotina/Entrada/higiene.jpg" ,
+                            "src": "../../../../Assets/Image/Rotina/Entrada/higiene.jpg" ,
                             "flag": false ,
                             "width": "100" ,
                             "height": "100" ,
@@ -74,7 +74,7 @@ var itens = [
                     {
                         "op": {
 
-                            "src": "../../../Assets/Image/Animais/buffalo.png" ,
+                            "src": "../../../../Assets/Image/Animais/buffalo.png" ,
                             "flag": true ,
                             "width": "" ,
                             "height": "" ,
@@ -85,7 +85,7 @@ var itens = [
                     {
                         "op": {
 
-                            "src": "../../../Assets/Image/Animais/buffalo.png" ,
+                            "src": "../../../../Assets/Image/Animais/buffalo.png" ,
                             "flag": false ,
                             "width": "" ,
                             "height": "" ,
@@ -109,7 +109,7 @@ var itens = [
             {
                 "Imagem": {
                      "ID": "01",
-                     "src": "../../../Assets/Image/Animais/galinha.png" ,
+                     "src": "../../../../Assets/Image/Animais/galinha.png" ,
                      "width": "" ,
                      "height": "" ,
                      "narracao": "" ,
@@ -121,7 +121,7 @@ var itens = [
                 "Imagem": {
 
                     "ID": "02" ,
-                    "src": "../../../Assets/Image/Animais/galinha.png" ,
+                    "src": "../../../../Assets/Image/Animais/galinha.png" ,
                     "width": "" ,
                     "height": "" ,
                     "narracao": "" ,
@@ -133,7 +133,7 @@ var itens = [
                 "Imagem": {
 
                     "ID": "03" ,
-                    "src": "../../../Assets/Image/Animais/galinha.png" ,
+                    "src": "../../../../Assets/Image/Animais/galinha.png" ,
                     "width": "" ,
                     "height": "" ,
                     "narracao": "" ,
@@ -145,7 +145,7 @@ var itens = [
                 "Imagem": {
 
                     "ID": "04" ,
-                    "src": "../../../Assets/Image/Animais/galinha.png" ,
+                    "src": "../../../../Assets/Image/Animais/galinha.png" ,
                     "width": "" ,
                     "height": "" ,
                     "narracao": "" ,
@@ -161,7 +161,7 @@ var itens = [
                     {
                         "op": {
                             
-                            "src": "../../../Assets/Image/Animais/elefante.png" ,
+                            "src": "../../../../Assets/Image/Animais/elefante.png" ,
                             "flag": false,
                             "width": "",
                             "height": "",
@@ -172,7 +172,7 @@ var itens = [
                     {
                         "op": {
 
-                            "src": "../../../Assets/Image/Animais/elefante.png" ,
+                            "src": "../../../../Assets/Image/Animais/elefante.png" ,
                             "flag": true,
                             "width": "",
                             "height": "",
@@ -191,7 +191,7 @@ var itens = [
                     {
                         "op": {
 
-                            "src": "../../../Assets/Image/Animais/jacare.png" ,
+                            "src": "../../../../Assets/Image/Animais/jacare.png" ,
                             "flag": true,
                             "width": "",
                             "height": "",
@@ -203,7 +203,7 @@ var itens = [
                     {
                         "op": {
 
-                            "src": "../../../Assets/Image/Animais/jacare.png" ,
+                            "src": "../../../../Assets/Image/Animais/jacare.png" ,
                             "flag": false,
                             "width": "",
                             "height": "",
@@ -228,7 +228,7 @@ var itens = [
             {
                 "Imagem": {
                      "ID": "01" ,
-                     "src": "../../../Assets/Image/Animais/baleiaJubarte.png" ,
+                     "src": "../../../../Assets/Image/Animais/baleiaJubarte.png" ,
                      "width": "" ,
                      "height": "" ,
                      "narracao": "" ,
@@ -238,7 +238,7 @@ var itens = [
             {
                 "Imagem": {
                     "ID": "02" ,
-                    "src": "../../../Assets/Image/Animais/baleiaJubarte.png" ,
+                    "src": "../../../../Assets/Image/Animais/baleiaJubarte.png" ,
                     "width": "" ,
                     "height": "" ,
                     "narracao": "" ,
@@ -248,7 +248,7 @@ var itens = [
             {
                 "Imagem": {
                     "ID": "03" ,
-                    "src": "../../../Assets/Image/Animais/baleiaJubarte.png" ,
+                    "src": "../../../../Assets/Image/Animais/baleiaJubarte.png" ,
                     "width": "" ,
                     "height": "" ,
                     "narracao": "" ,
@@ -258,7 +258,7 @@ var itens = [
             {
                 "Imagem": {
                     "ID": "04" ,
-                    "src": "../../../Assets/Image/Animais/baleiaJubarte.png" ,
+                    "src": "../../../../Assets/Image/Animais/baleiaJubarte.png" ,
                     "width": "" ,
                     "height": "" ,
                     "narracao": "" ,
@@ -274,7 +274,7 @@ var itens = [
                     {
                         "op": {
                             
-                            "src": "../../../Assets/Image/Animais/buffalo.png" ,
+                            "src": "../../../../Assets/Image/Animais/buffalo.png" ,
                             "flag": true ,
                             "width": "" ,
                             "height": "" ,
@@ -285,7 +285,7 @@ var itens = [
                     {
                         "op": {
 
-                            "src": "../../../Assets/Image/Animais/buffalo.png" ,
+                            "src": "../../../../Assets/Image/Animais/buffalo.png" ,
                             "flag": false ,
                             "width": "" ,
                             "height": "" ,
@@ -303,7 +303,7 @@ var itens = [
                     {
                         "op": {
 
-                            "src": "../../../Assets/Image/Animais/buffalo.png" ,
+                            "src": "../../../../Assets/Image/Animais/buffalo.png" ,
                             "flag": true ,
                             "width": "" ,
                             "height": "" ,
@@ -314,7 +314,7 @@ var itens = [
                     {
                         "op": {
 
-                            "src": "../../../Assets/Image/Animais/buffalo.png" ,
+                            "src": "../../../../Assets/Image/Animais/buffalo.png" ,
                             "flag": false ,
                             "width": "" ,
                             "height": "" ,
