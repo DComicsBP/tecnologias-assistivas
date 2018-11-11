@@ -1,7 +1,64 @@
 var arraySound = [$("#opAAudio"), $("#opBAudio"), $("#opCAudio"), $("#questaoAudio")];
 var j = 3//ath.floor(Math.random() * 3) + 0;
+debugger;
+
 
 var regrasTransito = function (i) {
+    
+    function carregaDados(i){
+        var dados = `<section id="${itens[i].ID}">
+        <div class="container" id="div-content">
+            <div class="row">
+                <div class="card-body">
+
+                    <div class="">
+                        <audio id="${itens[i].Pergunta}" controls autoplay src=""></audio>
+
+                        <h1 id="title"></h1>
+                        <div class="card" style="width: 28rem;">
+                            <img class="card-img-top" src="${itens[i].Imagem}" id="principalImage" height="" width="">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div style="display: table-row" class="card-columns options">
+                        <div class="card questionCard opA" style="width: 18rem; cursor: pointer" id="opABox" onclick="checkValue(this.id)">
+
+                            <h4 id="titleA" id="opATexto"></h4>
+                            <img class="" src="" id="opA" height="" width="">
+                            <audio id="opAAudio" controls="controls" src="" hidden></audio>
+                            <br>
+                            <br>
+                        </div>
+
+                        <div class="card questionCard opB" style="width: 18rem; cursor: pointer;" id="opBBox" onclick="checkValue(this.id)">
+                            <audio id="opBAudio" autoplpay="" controls="controls" src="" hidden>
+                            </audio>
+                            <h4 id="opBTexto"></h4>
+                            <img class="" src="" height="" width="" id="opB">
+                            <br>
+                            <br>
+                        </div>
+
+                        <div class="card questionCard opC" style="width: 18rem; cursor: pointer;" id="opCBox" onclick="checkValue(this.id)">
+                            <audio id="opCAudio" autoplpay="" controls="controls" src="" hidden>
+                            </audio>
+                            <h4 id="opCTexto"></h4>
+                            <img class="" src="" id="opC" height="" width="">
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>`; 
+
+
+
+    }
+    
     var count = 0;
     $(".questionCard").on("mouseenter", function () {
         var audio = $(this).find("audio");
@@ -10,6 +67,7 @@ var regrasTransito = function (i) {
             $(audio)[0].play();
         }
     });
+
     $(".questionCard").on("mouseleave", function () {
         var audio = $(this).find("audio");
         $(audio)[0].pause();
@@ -20,7 +78,7 @@ var regrasTransito = function (i) {
         $("#questaoAudio").attr("id", function () {
             
             this.src = itens[j].Pergunta;
-         });
+        });
         $("#title").attr("id", function () {
             this.innerHTML = itens[j].Title;
         });
@@ -96,7 +154,11 @@ var regrasTransito = function (i) {
     }
 
     this.init = function () {
-        carregaDados(i);
+    
+    for (let index = 0; index < itens.length; index++) {
+        carregaDados(index);
+    }
+        
 
     }
 
@@ -120,11 +182,11 @@ var checkValue = function (element) {
 
     if (!valor) {
         $('#modalTitulo').attr('id', function () { this.innerHTML = "Não foi dessa vez, tentenovamente!!"; });
-        $("#ImagemModal").attr("id", function () { this.src = "../../../../Assets/Image/DepoisDasRespostas/ramtaro.gif" });
+        $("#ImagemModal").attr("id", function () { this.src = "../../../Assets/Image/DepoisDasRespostas/ramtaro.gif" });
     }
     if (valor) {
         $('#modalTitulo').attr('id', function () { this.innerHTML = "Parabéns, Muito Bem!!" });
-        $("#ImagemModal").attr("id", function () { this.src = "../../../../Assets/Image/DepoisDasRespostas/comemoracao01.gif" });
+        $("#ImagemModal").attr("id", function () { this.src = "../../../Assets/Image/DepoisDasRespostas/comemoracao01.gif" });
    
     }
     $('#myModal').modal('show');
