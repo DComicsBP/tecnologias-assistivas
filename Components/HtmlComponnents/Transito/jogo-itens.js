@@ -62,7 +62,7 @@ var itens = [
         "opC":{
           "NomeObjeto":"OPÇÃO C", 
           "Imagem": "../../../Assets/Image/Transito/paradaPlaca.png",
-          "SomNarracao": "../../../Assets/Audio/Transito/partida02/opC.m4a",
+          "SomNarracao": "../../../Assets/Audio/Transito/partida02/opC.mp3",
           "Flag": true, 
           "width":100, 
           "height":100
@@ -120,7 +120,7 @@ var itens = [
           "NomeObjeto":"B) PLACA ESCRITO 'PARE'. ", 
           "Imagem": "../../../Assets/Image/Transito/pare.jpg",
           "SomNarracao": "../../../Assets/Audio/Transito/partida04/opB.mp3",
-          "Flag": true, 
+          "Flag": false, 
           "width":120, 
           "height":130
         }, 
@@ -128,7 +128,7 @@ var itens = [
           "NomeObjeto":" C) PLACA DE CUIDADO COM A LOMBADA", 
           "Imagem": "../../../Assets/Image/Transito/lombada.jpg",
           "SomNarracao": "../../../Assets/Audio/Transito/partida04/opC.mp3",
-          "Flag": true, 
+          "Flag": false, 
           "width":120, 
           "height":130
         }
@@ -156,7 +156,7 @@ var itens = [
           "NomeObjeto":"B) PLACA COM A IMAGEM DE UM BONECO EM CIMA DE LISTRAS", 
           "Imagem": "../../../Assets/Image/Transito/fixaSegurança.png",
           "SomNarracao": "../../../Assets/Audio/Transito/partida05/opB.mp3",
-          "Flag": true, 
+          "Flag": false, 
           "width":175, 
           "height":180
         }
