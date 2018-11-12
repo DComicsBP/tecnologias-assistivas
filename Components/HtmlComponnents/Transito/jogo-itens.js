@@ -1,6 +1,7 @@
 var itens = [
     {
       "ID":"Jogo01",
+      "IDModal":"Jogo01M",
       "Imagem":"../../../Assets/Image/Transito/semáfaro.png",
       "Width": 200, 
       "Height":300,
@@ -11,6 +12,7 @@ var itens = [
           "NomeObjeto":"A) SINAL VERDE", 
           "Imagem": "../../../Assets/Image/Transito/sinalVerde.jpg",
           "SomNarracao": "../../../Assets/Audio/Transito/partida01/opA.mp3",
+          "Modal":"../../../Assets/Image/DepoisDasRespostas/ramtaro.gif",
           "Flag": false, 
           "width":63, 
           "height":150
@@ -19,6 +21,7 @@ var itens = [
           "NomeObjeto":"B) SINAL VERMELHO", 
           "Imagem": "../../../Assets/Image/Transito/sinalVermelho.jpg",
           "SomNarracao": "../../../Assets/Audio/Transito/partida01/opB.mp3",
+          "Modal":"../../../Assets/Image/DepoisDasRespostas/happy.gif ",
           "Flag": true, 
           "width":70, 
           "height":150
@@ -27,6 +30,7 @@ var itens = [
           "NomeObjeto":" C) SINAL AMARELO", 
           "Imagem": "../../../Assets/Image/Transito/sinalAmarelo.jpg",
           "SomNarracao": "../../../Assets/Audio/Transito/partida01/opC.mp3",
+          "Modal":"../../../Assets/Image/DepoisDasRespostas/ramtaro.gif",
           "Flag": false,
           "width":70, 
           "height":150
@@ -37,16 +41,18 @@ var itens = [
      
     {
       "ID":"Jogo02",
+      "IDModal":"Jogo02M",
       "Imagem":"../../../Assets/Image/Transito/paradaBus.jpg",
       "Width": 100, 
       "Height":250,
       "Title":"QUAL É A PLACA DA PARADA DE ÔNIBUS?",
-      "Pergunta": "../../../Assets/Audio/Transito/partida02/questao.mp3", 
+      "Pergunta": "../../../Assets/Audio/Transito/partida02/questao.mp3",
       "Opcoes":{
         "opA":{
           "NomeObjeto":"OPÇÃO A", 
           "Imagem": "../../../Assets/Image/Transito/areaPedestres.jpg",
           "SomNarracao": "../../../Assets/Audio/Transito/partida02/opA.mp3",
+          "Modal":"../../../Assets/Image/DepoisDasRespostas/ramtaro.gif",
           "Flag": false, 
           "width":190, 
           "height":200
@@ -55,6 +61,7 @@ var itens = [
           "NomeObjeto":"OPÇÃO B", 
           "Imagem": "../../../Assets/Image/Transito/estacione.jpg",
           "SomNarracao": "../../../Assets/Audio/Transito/partida02/opB.mp3",
+          "Modal":"../../../Assets/Image/DepoisDasRespostas/ramtaro.gif",
           "Flag": false, 
           "width":100, 
           "height":100
@@ -63,6 +70,7 @@ var itens = [
           "NomeObjeto":"OPÇÃO C", 
           "Imagem": "../../../Assets/Image/Transito/paradaPlaca.png",
           "SomNarracao": "../../../Assets/Audio/Transito/partida02/opC.mp3",
+          "Modal":"../../../Assets/Image/DepoisDasRespostas/baloes03.gif",
           "Flag": true, 
           "width":100, 
           "height":100
@@ -73,6 +81,7 @@ var itens = [
 
     {
       "ID":"Jogo03",
+      "IDModal":"Jogo03M",
       "Imagem":"../../../Assets/Image/Transito/ruaMovimentada.jpg",
       "Width": 500, 
       "Height":300,
@@ -85,6 +94,7 @@ var itens = [
           "ImgHeight":"",
           "ImgWidth":"",
           "SomNarracao": "../../../Assets/Audio/Transito/partida03/opA.mp3",
+          "Modal":"../../../Assets/Image/DepoisDasRespostas/comemoracao03.gif",
           "Flag": true, 
           "width":250, 
           "height":200
@@ -92,6 +102,7 @@ var itens = [
         "opB":{
           "NomeObjeto":"B) EM QUALQUER PARTE DA RUA", 
           "Imagem": "../../../Assets/Image/Transito/atravessarForaDaFaixa.jpg",
+          "Modal":"../../../Assets/Image/DepoisDasRespostas/ramtaro.gif",
           "SomNarracao": "../../../Assets/Audio/Transito/partida03/opB.mp3",
           "Flag": false, 
           "width":250, 
@@ -102,6 +113,7 @@ var itens = [
 
     {
       "ID":"Jogo04",
+      "IDModal":"Jogo04M",
       "Imagem":"",
       "Width": 100, 
       "Height":100,
@@ -111,6 +123,7 @@ var itens = [
         "opA":{
           "NomeObjeto":"A) PLACA COM A SILUETA DE UM ANIMAL", 
           "Imagem": "../../../Assets/Image/Transito/animaisNaPista.jpg",
+          "Modal":"../../../Assets/Image/DepoisDasRespostas/comemoracao02.gif",
           "SomNarracao": "../../../Assets/Audio/Transito/partida04/opA.mp3",
           "Flag": true, 
           "width":100, 
@@ -120,6 +133,7 @@ var itens = [
           "NomeObjeto":"B) PLACA ESCRITO 'PARE'. ", 
           "Imagem": "../../../Assets/Image/Transito/pare.jpg",
           "SomNarracao": "../../../Assets/Audio/Transito/partida04/opB.mp3",
+          "Modal":"../../../Assets/Image/DepoisDasRespostas/ramtaro.gif",
           "Flag": false, 
           "width":120, 
           "height":130
@@ -128,6 +142,7 @@ var itens = [
           "NomeObjeto":" C) PLACA DE CUIDADO COM A LOMBADA", 
           "Imagem": "../../../Assets/Image/Transito/lombada.jpg",
           "SomNarracao": "../../../Assets/Audio/Transito/partida04/opC.mp3",
+          "Modal":"../../../Assets/Image/DepoisDasRespostas/ramtaro.gif",
           "Flag": false, 
           "width":120, 
           "height":130
@@ -138,6 +153,7 @@ var itens = [
     
     {
       "ID":"Jogo05",
+      "IDModal":"Jogo05M",
       "Imagem":"",
       "Width": 100, 
       "Height":100,
@@ -148,6 +164,7 @@ var itens = [
           "NomeObjeto":"A) PLACA COM A IMAGEM DE UM BONECO", 
           "Imagem": "../../../Assets/Image/Transito/criancas.png",
           "SomNarracao": "../../../Assets/Audio/Transito/partida05/opA.mp3",
+          "Modal":"../../../Assets/Image/DepoisDasRespostas/comemoracao01.gif",
           "Flag": true, 
           "width":200, 
           "height":200
@@ -156,6 +173,7 @@ var itens = [
           "NomeObjeto":"B) PLACA COM A IMAGEM DE UM BONECO EM CIMA DE LISTRAS", 
           "Imagem": "../../../Assets/Image/Transito/fixaSegurança.png",
           "SomNarracao": "../../../Assets/Audio/Transito/partida05/opB.mp3",
+          "Modal":"../../../Assets/Image/DepoisDasRespostas/ramtaro.gif", 
           "Flag": false, 
           "width":175, 
           "height":180
