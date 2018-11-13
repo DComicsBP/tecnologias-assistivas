@@ -86,27 +86,10 @@ var regrasTransito = function () {
             </div>
         </div>
 
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitulo"></h5>
+      
+    </section>  
+    `;
 
-               </div>
-                <div class="modal-body">
-                    <center>
-                        <img src="" alt="" id="ImagemModal" height="" width="">
-                    </center>
-                </div>
-                <div class="modal-footer">
-                        <button class="btn btn-danger incorreto" id="${i}">VOLTAR</button>
-                       <button class="btn btn-info correto" id="${i}" onclick="proximaPartida(this, ${i})">CONTINUAR</button>
-                </div>
-            </div>
-        </div> 
-    </div>
-     
-    </section>`;
 
     $("#render").append(dados); 
     
@@ -133,17 +116,22 @@ var onMouseEnter = function(element){
 }
 
 var checkValue = function (e) {
-    console.log(e);
-    
-    debugger;
+  console.log(e); 
+var root = e.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+var idRoot = root.id
+
+$("#"+idRoot).hide() 
+var modal  = `
+Aqui vai ter que ir o botão para continuar a imagem e a narração da resposta
+`
+
+$("#modal").show() 
+
 
     let valor = e.attributes[3].value;
         $("#ImagemModal").attr("id", function () { this.src = `${e.attributes[4].value}` });
 
-        $('.myModal').modal({
-            backdrop: 'static',
-            keyboard: false  // to prevent closing with Esc button (if you want this too)
-        }).show(); 
+       
   
 
 }
