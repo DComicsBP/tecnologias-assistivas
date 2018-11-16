@@ -1,139 +1,154 @@
 var arraySound = [$("#opAAudio"), $("#opBAudio"), $("#opCAudio"), $("#questaoAudio")];
-var j = 3//ath.floor(Math.random() * 3) + 0;
+debugger;
+var count = 0; 
+let i = 0; 
+/*
+*/ 
+var checkSection = function(){
 
-var regrasTransito = function (i) {
-    var count = 0;
-    $(".questionCard").on("mouseenter", function () {
-        var audio = $(this).find("audio");
-        if ($("#opAAudio")[0].paused && $("#opBAudio")[0].paused && $("#opCAudio")[0].paused && $("#questaoAudio")[0].paused) {
-            $(this).css('background-color', 'blue');
-            $(audio)[0].play();
-        }
-    });
-    $(".questionCard").on("mouseleave", function () {
-        var audio = $(this).find("audio");
-        $(audio)[0].pause();
-        audio[0].currentTime = 0;
-        $(this).css('background-color', 'white');
-    });
-    var carregaDados = function (j) {
-        $("#questaoAudio").attr("id", function () {
-            
-            this.src = itens[j].Pergunta;
-         });
-        $("#title").attr("id", function () {
-            this.innerHTML = itens[j].Title;
-        });
-        $("#principalImage").attr("id", function () {
-            
-            if(itens[j].Imagem== ''){
-                $(this).hide()
-            }else{
-                this.src = itens[j].Imagem;
-                this.width = itens[j].Width; 
-                this.height = itens[j].Height;
-            }
-             
-        });
-        $(".opA").attr("class", function () {
+}
 
-            $("#opA").attr("id", function () {
-                this.src = itens[j].Opcoes.opA.Imagem;
-                this.width = itens[j].Opcoes.opA.width;
-            });
-
-            $("#titleA").attr("id", function () {
-                this.innerHTML = itens[j].Opcoes.opA.NomeObjeto;
-            });
-            $("#opAAudio").attr("id", function () {
-                this.src = itens[j].Opcoes.opA.SomNarracao;
-            });
-        });
-
-        $(".opB").attr("class", function (param) {
-
-            $("#opB").attr("id", function () {
-                this.src = itens[j].Opcoes.opB.Imagem;
-                this.width = itens[j].Opcoes.opB.width;
-                this.height = itens[j].Opcoes.opB.height;
-            });
-
-            $("#opBTexto").attr("id", function () {
-                this.innerHTML = itens[i].Opcoes.opB.NomeObjeto;
-            })
-            $("#opBAudio").attr("id", function () {
-                this.src = itens[j].Opcoes.opB.SomNarracao;
-            });
-
-
-        });
-
-        if (typeof itens[j].Opcoes.opC === 'undefined') {
-            $("#opCBox").hide();
-        }
-        else {
-            $(".opC").attr("class", function () {
-                console.log('This ===>', this)
-
-                $("#opC").attr("id", function () {
-
-                    this.src = itens[j].Opcoes.opC.Imagem;
-                    this.width = itens[j].Opcoes.opC.width;
-                    this.height = itens[j].Opcoes.opC.height;
-                });
-
-                $("#opCTexto").attr("id", function () {
-                    this.innerHTML = itens[j].Opcoes.opC.NomeObjeto;
-                })
-
-                $("#opCAudio").attr("id", function () {
-                    this.src = itens[j].Opcoes.opC.SomNarracao;
-                });
-            });
-
-        }
-
-    }
+var regrasTransito = function () {
+   
 
     this.init = function () {
-        carregaDados(i);
-
+        
+        itens.forEach(item => {
+            carregaDados(item); 
+            // events(); 
+           
+        });
     }
 
+    function carregaDados(item) {
+        let opcaoC = "";
+        if (typeof item.Opcoes.opC !== "undefined") {
+
+            opcaoC = `<div class="card questionCard opC" style="width: 18rem; cursor: pointer;" id="opCBox" data-flag="${item.Opcoes.opC.Flag}" data-modal ="${ item.Opcoes.opC.Modal}" onclick="checkValue(this)" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
+                                <audio id="opCAudio" controls autoplay src="${item.Opcoes.opC.SomNarracao}" hidden>
+                                </audio>    
+                                <h4 id="opCTexto">${item.Opcoes.opC.NomeObjeto}</h4>
+                                <img class="" src="${item.Opcoes.opC.Imagem}" height="${item.Opcoes.opC.height}" width="${item.Opcoes.opC.width}" id="opC">
+                                <br>
+                                <br>
+                            </div>`;
+
+        }
+
+        let imagemPrincipal =
+            `<div class="card" style="width: 28rem;">
+                <img class="card-img-top" src="${item.Imagem}" id="principalImage" height="${item.Height}" width="${item.Width}"> 
+             <div />`;
+
+        if (typeof item.Imagem === "undefined" || item.Imagem === "" || item.Imagem === null) {
+            imagemPrincipal = "";
+        }
+        var display = 'none';
+        if(count == 0){
+            display = 'block'; 
+        }
+         count ++;
+
+        var dados = `
+    <br /> <br /><section id="${item.ID}" data-indice = "${i}" style="display:${display};">
+        <div class="container" id="div-content">
+            <div class="row">
+                <div class="card-body">
+
+                    <div class="">
+                        <audio id=""  src="${item.Pergunta}"></audio>
+
+                        <h1 id="title">${item.Title}</h1>
+                            `+ imagemPrincipal + `
+                       
+                    </div>
+                    <br>
+                    <br>
+                    <div style="display: table-row" class="card-columns options">
+                        <div class="card questionCard opA" style="width: 18rem; cursor: pointer" id="opABox" data-flag="${item.Opcoes.opA.Flag}" data-modal ="${ item.Opcoes.opA.Modal}" onclick="checkValue(this)" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
+                            <h4 id="titleA" id="opATexto">${item.Opcoes.opA.NomeObjeto}</h4>
+                            <img class="" src="${item.Opcoes.opA.Imagem}" id="opA" height="${item.Opcoes.opA.height}" width="${item.Opcoes.opA.width}">
+                            <audio id="opAAudio" controls="controls" src="${item.Opcoes.opA.SomNarracao}" hidden></audio>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="card questionCard opB" style="width: 18rem; cursor: pointer;" id="opBBox" data-flag="${item.Opcoes.opB.Flag}" data-modal ="${ item.Opcoes.opB.Modal}" onclick="checkValue(this)" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
+                            <audio id="opBAudio" controls autoplay src="${item.Opcoes.opB.SomNarracao}" hidden>
+                            </audio>
+                            <h4 id="opBTexto">${item.Opcoes.opB.NomeObjeto}</h4>
+                            <img class="" src="${item.Opcoes.opB.Imagem}" height="${item.Opcoes.opB.height}" width="${item.Opcoes.opB.width}" id="opB">
+                            <br>
+                            <br>
+                        </div>` + opcaoC + ` 
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+    </section>  
+    `;
+
+
+    $("#render").append(dados); 
+    
+      i++; 
+
+    }
     init();
 }
+regrasTransito();
 
-regrasTransito(j);
+var onMouseLeave = function(element){
+        var audio = $(element).find("audio");
+        $(audio)[0].pause();
+        audio[0].currentTime = 0;
+        $(element).css('background-color', 'white');
+}
 
-var checkValue = function (element) {
-    debugger;
+var onMouseEnter = function(element){
+    var audio = $(element).find("audio");
+    console.log('Audio ==->', audio)
+    $(audio)[0].play();
+    $(element).css('background-color', 'blue');
+    
+}
 
-    var valor = false;
-    if (element === 'opABox') 
-        valor = itens[j].Opcoes.opA.Flag;
-    else if (element === 'opBBox')
-        valor = itens[j].Opcoes.opB.Flag;
-    else if (element === 'opCBox')
-        valor = itens[j].Opcoes.opC.Flag;
-    else
-        return;
+var checkValue = function (e) {
+  console.log(e); 
+var root = e.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+var idRoot = root.id
 
-    if (!valor) {
-        $('#modalTitulo').attr('id', function () { this.innerHTML = "Não foi dessa vez, tentenovamente!!"; });
-        $("#ImagemModal").attr("id", function () { this.src = "../../../../Assets/Image/DepoisDasRespostas/ramtaro.gif" });
-    }
-    if (valor) {
-        $('#modalTitulo').attr('id', function () { this.innerHTML = "Parabéns, Muito Bem!!" });
-        $("#ImagemModal").attr("id", function () { this.src = "../../../../Assets/Image/DepoisDasRespostas/comemoracao01.gif" });
-   
-    }
-    $('#myModal').modal('show');
-    setTimeout(function () {
+$("#"+idRoot).hide() 
+var modal  = `
+Aqui vai ter que ir o botão para continuar a imagem e a narração da resposta
+`
+
+$("#modal").show() 
+
+
+    let valor = e.attributes[3].value;
+        $("#ImagemModal").attr("id", function () { this.src = `${e.attributes[4].value}` });
+
        
-
-        $('#myModal1').modal('hide')
-        i = 2; 
-        carregaDados(i);
-    }, 2000);
+  
 
 }
+
+var proximaPartida = function (element, i) { 
+    console.log(element)
+    debugger; 
+    
+    if($('#.yModal').modal('hide')){
+        $('.myModal').modal('hide')
+    }
+
+    $('.myModal').modal('hide'); 
+    $(`[data-indice="${i+1}"]`).show(); 
+    $(`[data-indice="${i}"]`).hide(); 
+    
+    
+    
+
+ }
