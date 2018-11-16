@@ -21,53 +21,39 @@ var rotinas = function (j) {
 
                 const image = images.Imagem[x];
 
-                dados += `<div id="${image.ID}">`
-                dados += `<audio src="${image.narracao}"></audio>`
-                dados += ` <img src="${image.src}" alt="">`;
-                dados += `</div>`
+                    dados+=`<div class="row" id="${image.ID}">`
+                    dados+=    `<div class="col-sm-3">`
+                    dados+=      `<div class="card">`
+                    dados+=        `<div class="card-body">`
+                    dados+=          `<img src="${image.src}" width="150" height="200" alt="">`
+                    dados+=          `<audio src="${image.narracao}"></audio>` 
+                    dados+=        `</div>`
+                    dados+=      `</div>`      
+                    dados+=    `</div>`     
             }
         }
         dados += `</div>`;
 
-        for (let k = 0; k < element.grupos.length; k++) {
-            const ops = element.grupos[k];
-            opcoes += `<div class="${ops.class}">`;
-
-            for (let l = 0; l < ops.opcoes.length; l++) {
-                count++;
-                const op = ops.opcoes[l];
-
-                console.log('Element', ops)
-                opcoes += `<a href='#' class="${ops.class}" id="${op.op[5].id}" data="${op.op[1].flag}">`
-                opcoes += `<div >`;
-                opcoes += `<h4>`;
-                opcoes += count;
-                opcoes += `</h4>`;
-                opcoes += `<img src="${op.op[0].src}" alt="">`;
-                opcoes += `</div>`;
-                opcoes += `</a>`;
-
-            }
-            opcoes += `</div>`;
-
-
-        }
 
     }
 
     this.init = function () {
         carregaDados(j);
-        $(".opcoes").append(opcoes);
 
         $(".sequencia").append(dados);
         $(".grupoB").hide();
 
-
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('#sequencia').hide();
+            }, 7000);
+        });
+       // $("#sequencia").removeClass("preload");
     }
 
     init();
 }
-
+    ;
 rotinas(j);
 
 $("a").attr('class', function () {
@@ -85,6 +71,7 @@ $("a").attr('class', function () {
             if (flag === 'true') {
                 $(".sequencia").append(this.innerHTML)
                 $(".grupoB").hide();
+             
             }
 
 
