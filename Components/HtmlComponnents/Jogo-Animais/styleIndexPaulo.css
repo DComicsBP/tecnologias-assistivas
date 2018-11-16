@@ -1,45 +1,47 @@
 
     h1 {
  
-        color:rgb(92, 89, 89); text-shadow: rgb(161, 163, 145) 0.1em 0.1em 0.2em;
+        color:rgb(27, 26, 26); text-shadow: rgb(161, 163, 145) 0.1em 0.1em 0.2em;
         background-color: rgb(227, 230, 62);
         border: 1px solid rgb(41, 38, 38);
-        width: "100%";
+        width: "50%";
         height: "15%";
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         font-stretch: expanded;
+        font-size: xx-large;
          
       }
 
       h2 {
  
-        color:rgb(92, 89, 89); text-shadow: rgb(161, 163, 145) 0.1em 0.1em 0.2em;
-        background-color: whitesmoke;
-        width: "100%";
+        color:rgb(24, 22, 22); text-shadow: rgb(195, 212, 65) 0.1em 0.1em 0.2em;
+        background-color: rgb(178, 187, 139); 
+        width: "50%";
         height: "15%";
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         font-stretch: expanded;
+        font-size: xx-large;
          
       }
 
       h3 {
  
-        color:rgb(92, 89, 89); text-shadow: rgb(161, 163, 145) 0.1em 0.1em 0.2em;
-        background-color: whitesmoke;
-        width: "100%";
+        color:rgb(77, 73, 73); text-shadow: rgb(161, 163, 145) 0.1em 0.1em 0.2em;
+        background-color: rgb(178, 187, 139); 
+        width: "50%";
         height: "15%";
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         font-stretch: expanded;
-         
+        font-size:smaller;
       }
 
 
       
       body{
-        background-color: whitesmoke; 
+        background-color: rgb(178, 187, 139); 
         align-items: center;
       }
     
@@ -54,14 +56,21 @@
         align-items: center;
         justify-content: center;
     }
-    div{
-        color:rgba(189, 189, 189, 0.308);
-        background-color: whitesmoke;
-        border: 1px solid whitesmoke;
-        width: "100%";
-        height: "70%";
+    
 
+    img {
+      border-top-color: darkgoldenrod;
+      width: "80%";
+      height: "40%";
+    }
+
+    audio {
+      border-block-end-color: goldenrod
     }
     
+    #Animais{
+      width: 450px;
+      height: 350px;
+    }
 
 

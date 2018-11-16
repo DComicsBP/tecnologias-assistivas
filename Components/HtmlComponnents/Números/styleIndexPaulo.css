@@ -1,49 +1,53 @@
 
-    h1 {
+        h1 {
  
-        color:rgb(92, 89, 89); text-shadow: rgb(161, 163, 145) 0.1em 0.1em 0.2em;
-        background-color: rgb(227, 230, 62);
-        border: 1px solid rgb(41, 38, 38);
-        width: "100%";
-        height: "15%";
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: bold;
-        font-stretch: expanded;
-         
-      }
+          color:rgb(27, 26, 26); text-shadow: rgb(161, 163, 145) 0.1em 0.1em 0.2em;
+          background-color: rgb(227, 230, 62);
+          border: 1px solid rgb(41, 38, 38);
+          width: "50%";
+          height: "15%";
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: bold;
+          font-stretch: expanded;
+          font-size: xx-large;
+           
+        }
 
       h2 {
  
-        color:rgb(92, 89, 89); text-shadow: rgb(161, 163, 145) 0.1em 0.1em 0.2em;
-        background-color: whitesmoke;
-        width: "100%";
-        height: "15%";
+        color:black; text-shadow: rgb(195, 212, 65) 0.1em 0.1em 0.2em; */ */
+        background-color: rgb(178, 187, 139); 
+        width: "50%";
+        height: "25%";
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         font-stretch: expanded;
+        font-size: 50px;
          
       }
 
       h3 {
  
-        color:rgb(92, 89, 89); text-shadow: rgb(161, 163, 145) 0.1em 0.1em 0.2em;
-        background-color: whitesmoke;
-        width: "100%";
+        color:rgb(77, 73, 73); text-shadow: rgb(161, 163, 145) 0.1em 0.1em 0.2em;
+        background-color: rgb(178, 187, 139); 
+        width: "50%";
         height: "15%";
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         font-stretch: expanded;
-         
+        font-size:smaller;
       }
+
 
 
       
+      
       body{
-        background-color: whitesmoke; 
+        background-color: rgb(178, 187, 139); 
         align-items: center;
       }
     
-    hr{
+      hr{
         
         color: whitesmoke;
     }
@@ -54,14 +58,14 @@
         align-items: center;
         justify-content: center;
     }
-    div{
-        color:rgba(189, 189, 189, 0.308);
-        background-color: whitesmoke;
-        border: 1px solid whitesmoke;
-        width: "100%";
-        height: "70%";
 
+    
+    #number{
+      width:"23%";
+      height:"23%";
     }
+    
+    
     
 
 
