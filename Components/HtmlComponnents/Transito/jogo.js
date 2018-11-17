@@ -110,15 +110,19 @@ var regrasTransito = function () {
     </section>  
     `;
 
+    i++; 
 
     $("#render").append(dados.trim()); 
     
-      i++; 
 
     }
     init();
 }
 regrasTransito();
+
+var isHide = function(){
+
+}
 
 var onMouseLeave = function(element){
         var audio = $(element).find("audio");
@@ -138,23 +142,21 @@ var onMouseEnter = function(element){
 var checkValue = function (e) {
   console.log(e);
 
+var modals = "";
 var idJogo = "";  
 var root = e.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+if(typeof root.children[0].children[0] ==="undefined"){
+    root = e.parentElement.parentElement.parentElement.parentElement.parentElement;
+    modals = root.children[1]; 
+}else{
+    modals = root.children[0].children[1];
 
-    if(typeof root.childNodes[1].childNodes[1] ==="undefined"){
-        idJogo = root.childNodes[4].childNodes[1].id;
-    }else{
-        idJogo = root.childNodes[1].childNodes[1].id;
-    }
+}
+var jogo = root.children[0].children[0];  
+
     
-    var modals ="";
 
-    if(typeof root.childNodes[1].childNodes[3] ==="undefined"){
-        modals = root.childNodes[4].childNodes[3].id;
-    }else{
-        idJogo = root.childNodes[1].childNodes[3];
-    }
-
+    var idJogo = jogo.id; 
     var idModals = modals.id; 
     var modalTrue = modals.children[0].id;
     var modalFalse = modals.children[1].id;
@@ -179,14 +181,27 @@ var renderizaPartidaAnterior = function (event){
 }
 
 var renderizaPartidaPosterior = function (event) { 
-    var idNextSection  = event.path[5].nextElementSibling.nextElementSibling.nextElementSibling.id ; 
+    var idNextSection  = ""; 
+    var index = 5; 
+    if(event.path[5].nextElementSibling.nextElementSibling == null){
+        if(event.path[4].nextElementSibling == null){
+            idNextSection = event.path[5].nextElementSibling.id;
+        }else{
+            idNextSection = event.path[4].nextElementSibling.nextElementSibling.nextElementSibling.id; 
+        }
+
+        index = 4; 
+    }else{
+        idNextSection = event.path[5].nextElementSibling.nextElementSibling.nextElementSibling.id
+    }
 
     if(typeof idNextSection !== "undefined"){
         $("#"+idNextSection).show(); 
-    }else{
-
     }
-    var idCurrentlySection = event.path[5].id; 
+
+    
+
+    var idCurrentlySection = event.path[index].id; 
     $("#"+ idCurrentlySection).hide(); 
     debugger; 
     
