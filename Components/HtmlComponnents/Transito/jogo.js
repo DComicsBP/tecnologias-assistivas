@@ -50,17 +50,16 @@ var regrasTransito = function () {
          count ++;
 
         var dados = `
-    <br /> <br /><section id="${item.ID}" data-indice = "${i}" style="display:${display};">
-        <div class="container" id="div-content">
-            <div class="row">
+    <br /> <br />
+    <section id="${item.ID}" data-indice = "${i}" style="display:${display};">
+        <div class="container" id="${item.IDJogoDiv}">
+            <div class="row" id="ToHide${i}">
                 <div class="card-body">
-
                     <div class="">
                         <audio id=""  src="${item.Pergunta}"></audio>
 
                         <h1 id="title">${item.Title}</h1>
                             `+ imagemPrincipal + `
-                       
                     </div>
                     <br>
                     <br>
@@ -80,18 +79,36 @@ var regrasTransito = function () {
                             <br>
                             <br>
                         </div>` + opcaoC + ` 
-
                     </div>
                 </div>
             </div>
         </div>
-
-      
+        
+    <div id="modals${i}"> 
+        <div id="${item.IDModal}_TRUE${i}" style="display:none;" data-flag="true" class="myModal"> 
+            <div>
+                <h1>PARABÉNS!, JOGUEA PRÓXIMA PARTIDA</h1>
+                <img src="../../../Assets/Image/DepoisDasRespostas/aligator.gif">
+                <audio src="" autoplay ></audio>  
+            </div>
+        </div>
+        
+        <div id="${item.IDModal}_FALSE${i}" style="display:none;" data-flag="false" class="myModal"> 
+            <div>
+                <h1>NÃO DESISTA, TENTE NOVAMENTE!</h1>
+                <img src="../../../Assets/Image/DepoisDasRespostas/aligator.gif" id="">
+                <audio src="" autoplay ></audio>
+                <br />
+                <br />
+                <button type="button" class="btn btn-secondary" id="voltar${i}" onclick="renderizarAnterior(event)"> <- VOLTAR</button> 
+            </div>
+        </div>
+    <div/>
     </section>  
     `;
 
 
-    $("#render").append(dados); 
+    $("#render").append(dados.trim()); 
     
       i++; 
 
@@ -117,23 +134,29 @@ var onMouseEnter = function(element){
 
 var checkValue = function (e) {
   console.log(e); 
-var root = e.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
-var idRoot = root.id
+var root = e.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+var idJogo = root.childNodes[1].childNodes[1].id; 
+var modals = root.childNodes[1].childNodes[3];
+var idModals = modals.id; 
+var modalTrue = modals.children[0].id;
+var modalFalse = modals.children[1].id;
 
-$("#"+idRoot).hide() 
-var modal  = `
-Aqui vai ter que ir o botão para continuar a imagem e a narração da resposta
-`
-
-$("#modal").show() 
-
-
+$("#"+idJogo).hide();
+$("#"+idModals).show();
+        
     let valor = e.attributes[3].value;
-        $("#ImagemModal").attr("id", function () { this.src = `${e.attributes[4].value}` });
+    
+    if(valor == 'true')  {
+        $("#"+modalTrue).show(); 
+    }else{
+        $("#"+modalFalse).show();
+    }
+    debugger; 
+        
+}
 
-       
-  
-
+var renderizarAnterior = function (event){
+    
 }
 
 var proximaPartida = function (element, i) { 
