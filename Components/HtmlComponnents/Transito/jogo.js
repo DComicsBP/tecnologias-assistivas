@@ -90,6 +90,9 @@ var regrasTransito = function () {
                 <h1>PARABÉNS!, JOGUEA PRÓXIMA PARTIDA</h1>
                 <img src="../../../Assets/Image/DepoisDasRespostas/aligator.gif">
                 <audio src="" autoplay ></audio>  
+                <br />
+                <br />
+                <button type="button" class="btn btn-success" id="voltar${i}" onclick="renderizaPartidaPosterior(event)"> <- VOLTAR</button> 
             </div>
         </div>
         
@@ -100,7 +103,7 @@ var regrasTransito = function () {
                 <audio src="" autoplay ></audio>
                 <br />
                 <br />
-                <button type="button" class="btn btn-secondary" id="voltar${i}" onclick="renderizarAnterior(event)"> <- VOLTAR</button> 
+                <button type="button" class="btn btn-secondary" id="voltar${i}" onclick="renderizaPartidaAnterior(event)"> <- VOLTAR</button> 
             </div>
         </div>
     <div/>
@@ -151,27 +154,22 @@ $("#"+idModals).show();
     }else{
         $("#"+modalFalse).show();
     }
-    debugger; 
         
 }
 
-var renderizarAnterior = function (event){
-    
+var renderizaPartidaAnterior = function (event){
+    console.log(event);
+    $("#"+ event.path[5].children[0].children[0].id).show();
+    $("#"+event.path[2].id).hide();  
+    debugger;
+
 }
 
-var proximaPartida = function (element, i) { 
-    console.log(element)
+var renderizaPartidaPosterior = function (event) { 
+    var idNextSection  = event.path[5].nextElementSibling.nextElementSibling.nextElementSibling.id ; 
+    var idCurrentlySection = event.path[5].id; 
+    $("#"+idNextSection).show(); 
+    $("#"+ idCurrentlySection).hide(); 
     debugger; 
     
-    if($('#.yModal').modal('hide')){
-        $('.myModal').modal('hide')
-    }
-
-    $('.myModal').modal('hide'); 
-    $(`[data-indice="${i+1}"]`).show(); 
-    $(`[data-indice="${i}"]`).hide(); 
-    
-    
-    
-
  }
