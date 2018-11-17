@@ -136,40 +136,58 @@ var onMouseEnter = function(element){
 }
 
 var checkValue = function (e) {
-  console.log(e); 
+  console.log(e);
+
+var idJogo = "";  
 var root = e.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
-var idJogo = root.childNodes[1].childNodes[1].id; 
-var modals = root.childNodes[1].childNodes[3];
-var idModals = modals.id; 
-var modalTrue = modals.children[0].id;
-var modalFalse = modals.children[1].id;
+
+    if(typeof root.childNodes[1].childNodes[1] ==="undefined"){
+        idJogo = root.childNodes[4].childNodes[1].id;
+    }else{
+        idJogo = root.childNodes[1].childNodes[1].id;
+    }
+    
+    var modals ="";
+
+    if(typeof root.childNodes[1].childNodes[3] ==="undefined"){
+        modals = root.childNodes[4].childNodes[3].id;
+    }else{
+        idJogo = root.childNodes[1].childNodes[3];
+    }
+
+    var idModals = modals.id; 
+    var modalTrue = modals.children[0].id;
+    var modalFalse = modals.children[1].id;
+
+
 
 $("#"+idJogo).hide();
 $("#"+idModals).show();
-        
+
     let valor = e.attributes[3].value;
-    
     if(valor == 'true')  {
         $("#"+modalTrue).show(); 
     }else{
         $("#"+modalFalse).show();
     }
-        
 }
 
 var renderizaPartidaAnterior = function (event){
     console.log(event);
     $("#"+ event.path[5].children[0].children[0].id).show();
     $("#"+event.path[2].id).hide();  
-    debugger;
-
 }
 
 var renderizaPartidaPosterior = function (event) { 
     var idNextSection  = event.path[5].nextElementSibling.nextElementSibling.nextElementSibling.id ; 
+
+    if(typeof idNextSection !== "undefined"){
+        $("#"+idNextSection).show(); 
+    }else{
+
+    }
     var idCurrentlySection = event.path[5].id; 
-    $("#"+idNextSection).show(); 
     $("#"+ idCurrentlySection).hide(); 
     debugger; 
     
- }
+}
