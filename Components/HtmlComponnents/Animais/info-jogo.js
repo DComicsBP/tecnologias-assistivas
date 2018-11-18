@@ -14,8 +14,8 @@ var itens = [
   {
     "id": "cachorroGrande",
     "nomeAnimal": "CACHORRO GRANDE",
-    "imagemAnimal": "../../../Assets/Animais_Fotos/",
-    "audio": "../../../Assets/Audio/Animais_Sons/Cabra.mp3",
+    "imagemAnimal": "../../../Assets/Image/Animais_Fotos/Cachorro Grande.jpg",
+    "audio": "../../../Assets/Audio/Animais_Sons/Cachorro Grande.mp3",
   },
   {
     "id": "canarioBelga",
@@ -50,7 +50,7 @@ var itens = [
   {
     "id": "gatoGrande",
     "nomeAnimal": "GATO GRANDE",
-    "imagemAnimal": "../../../Assets/Image/Animais_Fotos/Cachorro Grande.jpg",
+    "imagemAnimal": "../../../Assets/Image/Animais_Fotos/Gato Grande.jpg",
     "audio": "../../../Assets/Audio/Animais_Sons/Gato Grande.mp3",
   },
   {
@@ -62,7 +62,7 @@ var itens = [
   {
     "id": "leao",
     "nomeAnimal": "LEÃO",
-    "imagemAnimal": "../../../Assets/Image/Animais_Fotos/Lobo.jpg",
+    "imagemAnimal": "../../../Assets/Image/Animais_Fotos/Leão.jpg",
     "audio": "../../../Assets/Audio/Animais_Sons/Leão.mp3",
   }, {
     "id": "lobo",
