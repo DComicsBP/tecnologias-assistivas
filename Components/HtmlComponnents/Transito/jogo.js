@@ -11,8 +11,7 @@ var arraySound = [$("#opAAudio"), $("#opBAudio"), $("#opCAudio"), $("#questaoAud
 debugger;
 var count = 0; 
 let i = 0; 
-/*
-*/ 
+
 var checkSection = function(){
 
 }
@@ -24,7 +23,6 @@ var regrasTransito = function () {
         
         itens.forEach(item => {
             carregaDados(item); 
-            // events(); 
            
         });
     }
@@ -63,13 +61,13 @@ var regrasTransito = function () {
     <section id="${item.ID}" data-indice = "${i}" style="display:${display};">
         <div class="container" id="${item.IDJogoDiv}">
             <div class="row" id="ToHide${i}">
-                <div class="card-body">
-                    <div class="">
-                        <audio id="pergunta${i}"  src="${item.Pergunta}"></audio>
+            <div class="card-body">
+            <div class="">
+                <audio id="pergunta${i}"  src="${item.Pergunta}"></audio>
 
-                        <h1 id="title">${item.Title}</h1>
-                            `+ imagemPrincipal + `
-                    </div>
+                <h1 id="title">${item.Title}</h1>
+                    `+ imagemPrincipal + `
+            </div>
                     <br>
                     <br>
                     <div style="display: table-row" class="card-columns options">
@@ -143,7 +141,6 @@ var onMouseLeave = function(element){
 
 var onMouseEnter = function(element){
     var audio = $(element).find("audio");
-    console.log('Audio ==->', audio)
     $(audio)[0].play();
     $(element).css('background-color', 'blue');
     
@@ -181,8 +178,9 @@ if(typeof root.children[0].children[0] ==="undefined"){
 
 var renderizaPartidaAnterior = function (event){
     console.log(event);
-    $("#"+ event.path[5].children[0].children[0].id).show();
-    $("#"+event.path[2].id).hide();  
+    var path = event.path || (event.composedPath && event.composedPath()); 
+    $("#"+ path[5].children[0].children[0].id).show();
+    $("#"+ path[2].id).hide();  
 }
 
 var renderizaPartidaPosterior = function (event) { 
