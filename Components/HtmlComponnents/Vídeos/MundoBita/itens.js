@@ -1,52 +1,32 @@
 var itens = [
     {
-        "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha 4 - Clipe Música Oficial - Galinha Pintadinha DVD 4 (1).mp4", 
-        "id":"gVideo01", 
-        "Título":"Galinha Pintadinha - Vol. 4", 
+        "src":"../../../../Assets/Video/Biblioteca/MundoBita/Mundo Bita - Como é Verde na Floresta [clipe infantil].mp4", 
+        "id":"bVideo01", 
+        "Título":"Como é Verde na Floresta", 
         "Descricao":""
     },
     {
-        "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha Mini - Atividade Forma da Forma - Círculo.mp4", 
-        "id":"gVideo02", 
-        "Título":"Atividade Forma da Forma - Círculo", 
+        "src":"../../../../Assets/Video/Biblioteca/MundoBita/Mundo Bita - Magia das Cores [clipe infantil].mp4", 
+        "id":"bVideo02", 
+        "Título":"Magia das Cores", 
         "Descricao":""
     },
     {
-        "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha Mini - Episódio 01 Completo - 12 min.mp4", 
-        "id":"gVideo02", 
-        "Título":"Um Dia de Praia", 
+        "src":"../../../../Assets/Video/Biblioteca/MundoBita/Mundo Bita - No fundo do mar [clipe infantil].mp4", 
+        "id":"bVideo03", 
+        "Título":"No Fundo do Mar", 
         "Descricao":""
     }, 
     {
-        "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha Mini - Episódio 02 Completo - 12 min.mp4", 
-        "id":"gVideo02", 
-        "Título":"Apaga, Acende, Apaga", 
+        "src":"../../../../Assets/Video/Biblioteca/MundoBita/Mundo Bita - Para Papar.mp4", 
+        "id":"bVideo04", 
+        "Título":"Para Papar", 
         "Descricao":""
     }, 
     {
-        "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha Mini - Episódio 03 Completo - 12 min.mp4", 
-        "id":"gVideo03", 
-        "Título":"A Festa dos Balões", 
-        "Descricao":""
-    }, 
-    {
-        "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha Mini - Episódio 04 Completo - 12 min.mp4", 
-        "id":"gVideo04", 
-        "Título":"AU AU, PIU PIU", 
-        "Descricao":""
-    }, 
-    {
-        "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha Mini - Episódio 05 Completo - 12 min.mp4", 
-        "id":"gVideo04", 
-        "Título":"Um Passeio de Cores", 
-        "Descricao":""
-    }, 
-
-    {
-        "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha Mini - Episódio 06 Completo - 12 min.mp4", 
-        "id":"gVideo04", 
-        "Título":"O Banho do Pintinho", 
+        "src":"../../../../Assets/Video/Biblioteca/MundoBita/Mundo Bita - Viajar pelo Safari.mp4", 
+        "id":"bVideo05", 
+        "Título":"Viajar pelo Safari", 
         "Descricao":""
     }
-
 ]

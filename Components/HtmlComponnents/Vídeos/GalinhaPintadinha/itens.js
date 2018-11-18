@@ -13,38 +13,38 @@ var itens = [
     },
     {
         "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha Mini - Episódio 01 Completo - 12 min.mp4", 
-        "id":"gVideo02", 
+        "id":"gVideo03", 
         "Título":"Um Dia de Praia", 
         "Descricao":""
     }, 
     {
         "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha Mini - Episódio 02 Completo - 12 min.mp4", 
-        "id":"gVideo02", 
+        "id":"gVideo04", 
         "Título":"Apaga, Acende, Apaga", 
         "Descricao":""
     }, 
     {
         "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha Mini - Episódio 03 Completo - 12 min.mp4", 
-        "id":"gVideo03", 
+        "id":"gVideo05", 
         "Título":"A Festa dos Balões", 
         "Descricao":""
     }, 
     {
         "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha Mini - Episódio 04 Completo - 12 min.mp4", 
-        "id":"gVideo04", 
+        "id":"gVideo06", 
         "Título":"AU AU, PIU PIU", 
         "Descricao":""
     }, 
     {
         "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha Mini - Episódio 05 Completo - 12 min.mp4", 
-        "id":"gVideo04", 
+        "id":"gVideo07", 
         "Título":"Um Passeio de Cores", 
         "Descricao":""
     }, 
 
     {
         "src":"../../../../Assets/Video/Biblioteca/GalinhaPintadinha/Galinha Pintadinha Mini - Episódio 06 Completo - 12 min.mp4", 
-        "id":"gVideo04", 
+        "id":"gVideo08", 
         "Título":"O Banho do Pintinho", 
         "Descricao":""
     }
