@@ -1,29 +1,36 @@
 var galinhaPintadinha = function () {
+    var data = "";
 
-    
+
     this.init = function () {
-        var data = ""; 
-       for (let index = 0; index < itens.length; index++) {
-        data  += carregaDados(index);        
-           
-       }
+        debugger;
 
+        var dados = "";
+        for (let index = 0; index < itens.length; index++) {
+
+            data += `
+            <br />
+            <br />
+            <section id="${itens[index].id}" onmouseenter="" onmouseover="">
+                <hr>
+                <h1 id="tituloG${index}" class="galinhaPintadinha">${itens[index].Título}</h1>
+                <hr>   
+                <video width="720" height="540" controls>
+                        <source src="${itens[index].src}" type="video/mp4">
+                        Seu Browser não suporta a tag Vídeo. 
+                    </video>
+            </section>
+    `;
+        }
+
+        $("#render").append(data);
     }
-
-    $("#render").append("data")
+    
     init();
 }
+galinhaPintadinha();
 
-var carregaDados = function (index) {
-    var dados = 
-    `
-    <section id="${itens[index].id}" onmouseenter="" onmouseover="">
-        <h4 id="${itens[index].Título}">Titulo</h4>
-            <video width="720" height="540" controls>
-                <source src="${itens[index].src}" type="video/mp4">
-                Seu Browser não suporta a tag Vídeo. 
-             </video>
-    </section>
-    `; 
-    return dados; 
+var carregaDados = function () {
+
+
 }

@@ -64,5 +64,5 @@
     }
 
     #icone_index{position:relative}
-    #icone_index:hover{top:-4px;box-shadow:0 4px 4px rgb(88, 85, 85)}
+    #icone_index:hover{top:-4px;box-shadow:0 4px 4px rgba(88, 85, 85)}
 
