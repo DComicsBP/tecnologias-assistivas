@@ -1,3 +1,12 @@
+
+
+$( document ).ready(function() {
+    var audio  = $(this).find("audio").toArray(); 
+    
+    console.log("Audio ===> ", audio); 
+    debugger;  
+
+  });
 var arraySound = [$("#opAAudio"), $("#opBAudio"), $("#opCAudio"), $("#questaoAudio")];
 debugger;
 var count = 0; 
@@ -25,7 +34,7 @@ var regrasTransito = function () {
         if (typeof item.Opcoes.opC !== "undefined") {
 
             opcaoC = `<div class="card questionCard opC" style="width: 18rem; cursor: pointer;" id="opCBox" data-flag="${item.Opcoes.opC.Flag}" data-modal ="${ item.Opcoes.opC.Modal}" onclick="checkValue(this)" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
-                                <audio id="opCAudio" controls autoplay src="${item.Opcoes.opC.SomNarracao}" hidden>
+                                <audio id="opCAudio${i}" controls autoplay src="${item.Opcoes.opC.SomNarracao}" hidden>
                                 </audio>    
                                 <h4 id="opCTexto">${item.Opcoes.opC.NomeObjeto}</h4>
                                 <img class="" src="${item.Opcoes.opC.Imagem}" height="${item.Opcoes.opC.height}" width="${item.Opcoes.opC.width}" id="opC">
@@ -56,7 +65,7 @@ var regrasTransito = function () {
             <div class="row" id="ToHide${i}">
                 <div class="card-body">
                     <div class="">
-                        <audio id=""  src="${item.Pergunta}"></audio>
+                        <audio id="pergunta${i}"  src="${item.Pergunta}"></audio>
 
                         <h1 id="title">${item.Title}</h1>
                             `+ imagemPrincipal + `
@@ -67,12 +76,12 @@ var regrasTransito = function () {
                         <div class="card questionCard opA" style="width: 18rem; cursor: pointer" id="opABox" data-flag="${item.Opcoes.opA.Flag}" data-modal ="${ item.Opcoes.opA.Modal}" onclick="checkValue(this)" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
                             <h4 id="titleA" id="opATexto">${item.Opcoes.opA.NomeObjeto}</h4>
                             <img class="" src="${item.Opcoes.opA.Imagem}" id="opA" height="${item.Opcoes.opA.height}" width="${item.Opcoes.opA.width}">
-                            <audio id="opAAudio" controls="controls" src="${item.Opcoes.opA.SomNarracao}" hidden></audio>
+                            <audio id="opAAudio${i}" controls="controls" src="${item.Opcoes.opA.SomNarracao}" hidden></audio>
                             <br>
                             <br>
                         </div>
                         <div class="card questionCard opB" style="width: 18rem; cursor: pointer;" id="opBBox" data-flag="${item.Opcoes.opB.Flag}" data-modal ="${ item.Opcoes.opB.Modal}" onclick="checkValue(this)" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
-                            <audio id="opBAudio" controls autoplay src="${item.Opcoes.opB.SomNarracao}" hidden>
+                            <audio id="opBAudio${i}" controls autoplay src="${item.Opcoes.opB.SomNarracao}" hidden>
                             </audio>
                             <h4 id="opBTexto">${item.Opcoes.opB.NomeObjeto}</h4>
                             <img class="" src="${item.Opcoes.opB.Imagem}" height="${item.Opcoes.opB.height}" width="${item.Opcoes.opB.width}" id="opB">
@@ -89,7 +98,7 @@ var regrasTransito = function () {
             <div>
                 <h1>PARABÉNS!, JOGUEA PRÓXIMA PARTIDA</h1>
                 <img src="../../../Assets/Image/DepoisDasRespostas/aligator.gif">
-                <audio src="" autoplay ></audio>  
+                <audio src="" autoplay id="modalTrue${i}"></audio>  
                 <br />
                 <br />
                 <button type="button" class="btn btn-success" id="voltar${i}" onclick="renderizaPartidaPosterior(event)"> <- VOLTAR</button> 
@@ -100,7 +109,7 @@ var regrasTransito = function () {
             <div>
                 <h1>NÃO DESISTA, TENTE NOVAMENTE!</h1>
                 <img src="../../../Assets/Image/DepoisDasRespostas/aligator.gif" id="">
-                <audio src="" autoplay ></audio>
+                <audio src="" autoplay id="modalFalse${i}"></audio>
                 <br />
                 <br />
                 <button type="button" class="btn btn-secondary" id="voltar${i}" onclick="renderizaPartidaAnterior(event)"> <- VOLTAR</button> 
@@ -121,6 +130,7 @@ var regrasTransito = function () {
 regrasTransito();
 
 var isHide = function(){
+    $(element).is(":visible");
 
 }
 
@@ -152,19 +162,14 @@ if(typeof root.children[0].children[0] ==="undefined"){
     modals = root.children[0].children[1];
 
 }
-var jogo = root.children[0].children[0];  
-
-    
-
+    var jogo = root.children[0].children[0];  
     var idJogo = jogo.id; 
     var idModals = modals.id; 
     var modalTrue = modals.children[0].id;
     var modalFalse = modals.children[1].id;
 
-
-
-$("#"+idJogo).hide();
-$("#"+idModals).show();
+    $("#"+idJogo).hide();
+    $("#"+idModals).show();
 
     let valor = e.attributes[3].value;
     if(valor == 'true')  {
@@ -182,27 +187,25 @@ var renderizaPartidaAnterior = function (event){
 
 var renderizaPartidaPosterior = function (event) { 
     var idNextSection  = ""; 
-    var index = 5; 
-    if(event.path[5].nextElementSibling.nextElementSibling == null){
-        if(event.path[4].nextElementSibling == null){
-            idNextSection = event.path[5].nextElementSibling.id;
+    var index = 5;
+    var path = event.path || (event.composedPath && event.composedPath()); 
+    
+    if(path[5].nextElementSibling.nextElementSibling == null || typeof path[5].nextElementSibling.nextElementSibling === "undefined"){
+        if(path[4].nextElementSibling == null){
+            idNextSection = path[5].nextElementSibling.id;
         }else{
-            idNextSection = event.path[4].nextElementSibling.nextElementSibling.nextElementSibling.id; 
+            idNextSection = path[4].nextElementSibling.nextElementSibling.nextElementSibling.id; 
         }
 
         index = 4; 
     }else{
-        idNextSection = event.path[5].nextElementSibling.nextElementSibling.nextElementSibling.id
+        idNextSection = path[5].nextElementSibling.nextElementSibling.nextElementSibling.id
     }
 
     if(typeof idNextSection !== "undefined"){
         $("#"+idNextSection).show(); 
     }
 
-    
-
-    var idCurrentlySection = event.path[index].id; 
+    var idCurrentlySection = path[index].id; 
     $("#"+ idCurrentlySection).hide(); 
-    debugger; 
-    
 }
