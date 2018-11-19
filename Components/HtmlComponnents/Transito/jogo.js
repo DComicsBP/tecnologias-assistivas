@@ -51,7 +51,7 @@ var regrasTransito = function () {
             <div class="row" id="ToHide${i}">
             <div class="card-body">
             <div class="">
-                <audio id="pergunta${i}"  src="${item.Pergunta}" ></audio>
+                <audio id="pergunta${i}"  src="${item.Pergunta}" controls></audio>
 
                 <h1 id="title">${item.Title}</h1>
                     `+ imagemPrincipal + `
