@@ -120,11 +120,11 @@ var checkValue = function (element) {
 
     if (!valor) {
         $('#modalTitulo').attr('id', function () { this.innerHTML = "Não foi dessa vez, tentenovamente!!"; });
-        $("#ImagemModal").attr("id", function () { this.src = "../../../../Assets/Image/DepoisDasRespostas/ramtaro.gif" });
+        $("#ImagemModal").attr("id", function () { this.src = "../../../Assets/Image/DepoisDasRespostas/ramtaro.gif" });
     }
     if (valor) {
         $('#modalTitulo').attr('id', function () { this.innerHTML = "Parabéns, Muito Bem!!" });
-        $("#ImagemModal").attr("id", function () { this.src = "../../../../Assets/Image/DepoisDasRespostas/comemoracao01.gif" });
+        $("#ImagemModal").attr("id", function () { this.src = "../../../Assets/Image/DepoisDasRespostas/comemoracao01.gif" });
    
     }
     $('#myModal').modal('show');
