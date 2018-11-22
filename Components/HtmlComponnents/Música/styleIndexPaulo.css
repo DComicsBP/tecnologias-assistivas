@@ -58,19 +58,22 @@
     }
     
 
-    img {
-      border-top-color: darkgoldenrod;
-      width: "80%";
-      height: "40%";
-    }
+
 
     audio {
       border-block-end-color: goldenrod
     }
     
     #music{
+      width: 450px;
+      height: 350px;
+
+    }
+
+    div{
       width: 500px;
       height: 450px;
+
     }
 
 
