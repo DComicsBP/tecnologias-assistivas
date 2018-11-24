@@ -36,3 +36,16 @@ function loadGames() {
             this.src = src;
         });
   }
+  var onMouseLeave = function (element) {
+    var audio = $(element).find("audio");
+    $(audio)[0].pause();
+    audio[0].currentTime = 0;
+    $(element).css('background-color', '#CCCCFF');
+}
+var onMouseEnter = function (element) {
+    debugger;
+    var audio = $(element).find("audio");
+    $(audio)[0].play();
+    $(element).css('background-color', '#FFCC33');
+
+}
