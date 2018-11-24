@@ -1,9 +1,6 @@
 var count = 0;
 let i = 0;
 
-var checkSection = function () {
-
-}
 var regrasTransito = function () {
 
 
@@ -114,10 +111,7 @@ var regrasTransito = function () {
     init();
 }
 regrasTransito();
-var isHide = function () {
-    $(element).is(":visible");
 
-}
 var onMouseLeave = function (element) {
     var audio = $(element).find("audio");
     $(audio)[0].pause();
