@@ -160,16 +160,6 @@ var checkValue = function (e) {
         $("#" + modalFalse).show();
         $("#" + modalTrue).hide();
 
-<<<<<<< HEAD
-    if (!valor) {
-        $('#modalTitulo').attr('id', function () { this.innerHTML = "Não foi dessa vez, tentenovamente!!"; });
-        $("#ImagemModal").attr("id", function () { this.src = "../../../Assets/Image/DepoisDasRespostas/ramtaro.gif" });
-    }
-    if (valor) {
-        $('#modalTitulo').attr('id', function () { this.innerHTML = "Parabéns, Muito Bem!!" });
-        $("#ImagemModal").attr("id", function () { this.src = "../../../Assets/Image/DepoisDasRespostas/comemoracao01.gif" });
-   
-=======
     }
 }
 var renderizaPartidaAnterior = function (event) {
@@ -187,7 +177,6 @@ var renderizaPartidaAnterior = function (event) {
         $("#"+foundSection.children[1].id ).hide();      
     }else{
         $("#"+foundSection.children[0].children[1].children[1].id ).hide();
->>>>>>> master
     }
     $("#" +foundSection.children[0].children[0].id).show(); 
 }
