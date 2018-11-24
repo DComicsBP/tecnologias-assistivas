@@ -10,7 +10,7 @@
       font-stretch: expanded;
       font-size: xx-large;
     }
-    
+
     h2 {
 
       color:rgb(24, 22, 22); text-shadow: rgb(195, 212, 65) 0.1em 0.1em 0.2em;
@@ -74,4 +74,12 @@
 
   }
 
+#render{
+    width: 100%;
+    border-color: blue;
+    text-align: center;
+}
 
+.ladoALado{
+
+}
