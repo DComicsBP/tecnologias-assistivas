@@ -1,168 +1,189 @@
 var itens = [
     {
-        "Imagem":"../../../Assets/Image/Letras/a.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "ALFACE - ABACATE",
+        "Imagem": "../../../Assets/Image/Letras/a.jpg",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/b.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "BOLO - BANANA",
+        "Imagem": "../../../Assets/Image/Letras/b.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/c.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "CASACO  - CAMISA",
+        "Imagem": "../../../Assets/Image/Letras/c.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/d.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "DEDO - DENTE",
+        "Imagem": "../../../Assets/Image/Letras/d.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/e.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "ERVILHA - ESCOLA",
+
+        "Imagem": "../../../Assets/Image/Letras/e.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/f.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "FADA - FEIJÃO",
+
+        "Imagem": "../../../Assets/Image/Letras/f.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/g.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "GELADEIRA - GOLEIRA",
+
+        "Imagem": "../../../Assets/Image/Letras/g.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/h.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "HIPOPÓTAMO - HORA",
+
+        "Imagem": "../../../Assets/Image/Letras/h.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/i.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "IGREJA - ÍNDIO",
+        "Imagem": "../../../Assets/Image/Letras/i.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/j.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "JORNAL - JANELA",
+        "Imagem": "../../../Assets/Image/Letras/j.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/k.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "KIBON - KIT-KAT",
+        "Imagem": "../../../Assets/Image/Letras/k.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/l.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "LIVRO - LOJA",
+        "Imagem": "../../../Assets/Image/Letras/l.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/m.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "MERENDA - MESA",
+        "Imagem": "../../../Assets/Image/Letras/m.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/n.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "NINHO - NÚVEN",
+        "Imagem": "../../../Assets/Image/Letras/n.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/o.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "OVO - ORELHA",
+        "Imagem": "../../../Assets/Image/Letras/o.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/p.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "PROFESSORA - PÉ",
+        "Imagem": "../../../Assets/Image/Letras/p.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/q.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "QUEIJO - QUARTO",
+        "Imagem": "../../../Assets/Image/Letras/q.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/r.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "RATO - RIACHO",
+        "Imagem": "../../../Assets/Image/Letras/r.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/s.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "SANDUÍCHE - SOPA",
+        "Imagem": "../../../Assets/Image/Letras/s.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/t.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "TESOURA - TAPETE",
+        "Imagem": "../../../Assets/Image/Letras/t.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/u.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "UVA - UMBIGO",
+        "Imagem": "../../../Assets/Image/Letras/u.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/v.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "VASSOURA - VELA",
+        "Imagem": "../../../Assets/Image/Letras/v.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/w.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "",
+        "Imagem": "../../../Assets/Image/Letras/w.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/x.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "XUXA - XAROPE",
+        "Imagem": "../../../Assets/Image/Letras/x.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
+    },
     {
-        "Imagem":"../../../Assets/Image/Letras/y.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "YAKULT - YOKI",
+        "Imagem": "../../../Assets/Image/Letras/y.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
-    }, 
-    
+    },
+
     {
-        "Imagem":"../../../Assets/Image/Letras/z.jpg",
-        "Width":"15%",
-        "Height":"15%", 
+        "Nome": "ZÍPER - ZOOLÓGICO",
+        "Imagem": "../../../Assets/Image/Letras/z.png",
+        "Width": "30%",
+        "Height": "30%",
         "Audio": "../../../Assets/Audio/Som_Letras/"
     }
-
-
-
-
-
-
-
-
-
 ]
