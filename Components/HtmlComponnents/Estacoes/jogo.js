@@ -80,7 +80,7 @@ var regrasTransito = function () {
         <div id="${item.IDModal}_TRUE${i}" style="display:none;" data-flag="true" class="myModal"> 
             <div>
                 <h1>PARABÉNS!, JOGUEA PRÓXIMA PARTIDA</h1>
-                <img src="../../../Assets/Image/DepoisDasRespostas/aligator.gif">
+                <img src="../../../Assets/Image/DepoisDasRespostas/emojiCorreto.jpg">
                 <audio src="" id="modalTrue${i}"></audio>  
                 <br />
                 <br />
@@ -91,7 +91,7 @@ var regrasTransito = function () {
         <div id="${item.IDModal}_FALSE${i}" style="display:none;" data-flag="false" class="myModal"> 
             <div>
                 <h1>NÃO DESISTA, TENTE NOVAMENTE!</h1>
-                <img src="../../../Assets/Image/DepoisDasRespostas/aligator.gif" id="">
+                <img src="../../../Assets/Image/DepoisDasRespostas/emojiPensativo.jpeg" id="">
                 <audio src="" id="modalFalse${i}"></audio>
                 <br />
                 <br />
