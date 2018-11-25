@@ -1,4 +1,6 @@
+/*
 var itens = [
+
     {
         "ID": "JOGO01",
         "narracao": "",
@@ -173,4 +175,57 @@ var itens = [
         ]
     },
     
+]
+
+*/
+var itens = [
+    { 
+        "id":"", 
+        "title":"", 
+        "imagem01":"", 
+        "imagem02":"",
+        "imagem03":"",
+        "opcoes":[
+            {"opcao":"opcaoA", "src":"", "flag":"true"},
+            {"opcao":"opcaoA", "src":"", "flag":"false"}
+        ]
+        
+    },
+    { 
+        "id":"", 
+        "title":"", 
+        "imagem01":"", 
+        "imagem02":"",
+        "imagem03":"",
+        "opcoes":[
+            {"opcao":"opcaoA", "src":"", "flag":"true"},
+            {"opcao":"opcaoA", "src":"", "flag":"false"}
+        ]
+        
+    },
+    { 
+        "id":"", 
+        "title":"", 
+        "imagem01":"", 
+        "imagem02":"",
+        "imagem03":"",
+        "opcoes":[
+            {"opcao":"opcaoA", "src":"", "flag":"true"},
+            {"opcao":"opcaoA", "src":"", "flag":"false"}
+        ]
+        
+    },
+    { 
+        "id":"", 
+        "title":"", 
+        "imagem01":"", 
+        "imagem02":"",
+        "imagem03":"",
+        "opcoes":[
+            {"opcao":"opcaoA", "src":"", "flag":"true"},
+            {"opcao":"opcaoA", "src":"", "flag":"false"}
+        ]
+        
+    }
+
 ]
