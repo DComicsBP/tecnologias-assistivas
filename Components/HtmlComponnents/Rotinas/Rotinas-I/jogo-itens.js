@@ -179,53 +179,109 @@ var itens = [
 
 */
 var itens = [
-    { 
-        "id":"", 
-        "title":"", 
-        "imagem01":"", 
-        "imagem02":"",
-        "imagem03":"",
-        "opcoes":[
-            {"opcao":"opcaoA", "src":"", "flag":"true"},
-            {"opcao":"opcaoA", "src":"", "flag":"false"}
+    {
+        "id": "item01",
+        "title": "",
+        "imagem01": "",
+        "imagem02": "",
+        "imagem03": "",
+        "opcoes": [
+            { "opcao": "opcaoA", "src": "", "flag": "true" },
+            { "opcao": "opcaoA", "src": "", "flag": "false" }
+        ],
+        "modal": [
+            {
+                "mod": {
+                    "src": "",
+                    "flag": true
+                }
+            },
+            {
+                "mod": {
+                    "src": "",
+                    "flag":false
+                }
+            }
+
         ]
-        
     },
-    { 
-        "id":"", 
-        "title":"", 
-        "imagem01":"", 
-        "imagem02":"",
-        "imagem03":"",
-        "opcoes":[
-            {"opcao":"opcaoA", "src":"", "flag":"true"},
-            {"opcao":"opcaoA", "src":"", "flag":"false"}
+    {
+        "id": "item01",
+        "title": "",
+        "imagem01": "",
+        "imagem02": "",
+        "imagem03": "",
+        "opcoes": [
+            { "opcao": "opcaoA", "src": "", "flag": "true" },
+            { "opcao": "opcaoA", "src": "", "flag": "false" }
+        ],
+        "modal": [
+            {
+                "mod": {
+                    "src": "",
+                    "flag": true
+                }
+            },
+            {
+                "mod": {
+                    "src": "",
+                    "flag":false
+                }
+            }
+
         ]
-        
     },
-    { 
-        "id":"", 
-        "title":"", 
-        "imagem01":"", 
-        "imagem02":"",
-        "imagem03":"",
-        "opcoes":[
-            {"opcao":"opcaoA", "src":"", "flag":"true"},
-            {"opcao":"opcaoA", "src":"", "flag":"false"}
+    {
+        "id": "item01",
+        "title": "",
+        "imagem01": "",
+        "imagem02": "",
+        "imagem03": "",
+        "opcoes": [
+            { "opcao": "opcaoA", "src": "", "flag": "true" },
+            { "opcao": "opcaoA", "src": "", "flag": "false" }
+        ],
+        "modal": [
+            {
+                "mod": {
+                    "src": "",
+                    "flag": true
+                }
+            },
+            {
+                "mod": {
+                    "src": "",
+                    "flag":false
+                }
+            }
+
         ]
-        
     },
-    { 
-        "id":"", 
-        "title":"", 
-        "imagem01":"", 
-        "imagem02":"",
-        "imagem03":"",
-        "opcoes":[
-            {"opcao":"opcaoA", "src":"", "flag":"true"},
-            {"opcao":"opcaoA", "src":"", "flag":"false"}
+    {
+        "id": "item01",
+        "title": "",
+        "imagem01": "",
+        "imagem02": "",
+        "imagem03": "",
+        "opcoes": [
+            { "opcao": "opcaoA", "src": "", "flag": "true" },
+            { "opcao": "opcaoA", "src": "", "flag": "false" }
+        ],
+        "modal": [
+            {
+                "mod": {
+                    "src": "",
+                    "flag": true
+                }
+            },
+            {
+                "mod": {
+                    "src": "",
+                    "flag":false
+                }
+            }
+
         ]
-        
     }
 
 ]
