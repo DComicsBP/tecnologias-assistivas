@@ -1,287 +1,147 @@
-/*
+
 var itens = [
+       {
+        "id": "item01",
+        "title": "AO CHEGAR À ESCOLA VOCÊ ENCONTRA A PROFESSORA, GUARDA A MOCHILA, LAVA AS MÃOS, ESPERA O COLEGA. DEPOIS FAZ O QUÊ?",
+        "imagens":[
+            
+                {
+                    "src":"../../../../Assets/Image/Rotina/chegada/1-prof-recebendo-o-aluno.jpg",
+                    "width":"200px",
+                    "height":"",
+                    "title":""
 
-    {
-        "ID": "JOGO01",
-        "narracao": "",
-        "descricao": "",
-        "Imagens": [
-            {
-                "Imagem": [
-                    { "ID": "01" },
-                    { "src": "../../../../Assets/Image/Rotina/Almoco/almoco.jpg" },
-                    { "width": "" },
-                    { "height": "" },
-                    { "narracao": "" },
-                    { "descricao": "" }
-                ]
-            },
-            {
-                "Imagem": [
+                },
+                {
+                    "src":"../../../../Assets/Image/Rotina/chegada/2-mochila-escaninho.jpg",
+                    "width":"150px",
+                    "height":"200",
+                    "title":""
 
-                    { "ID": "01" },
-                    { "src": "../../../../Assets/Image/Animais/cachorro.png" },
-                    { "width": "" },
-                    { "height": "" },
-                    { "narracao": "" },
-                    { "descricao": "" }
-                ]
-            },
-            {
-                "Imagem": [
-                    { "ID": "03" },
-                    { "src": "../../../../Assets/Image/Animais/carneiro.png" },
-                    { "width": "" },
-                    { "height": "" },
-                    { "narracao": "" },
-                    { "descricao": "" }
-                ]
-            },
-            {
-                "Imagem": [
-                    { "ID": "04" },
-                    { "src": "../../../../Assets/Image/Animais/cavalo.png" },
-                    { "narracao": "" },
-                    { "width": "" },
-                    { "height": "" },
-                    { "descricao": "" }
-                ]
-            }
-        ],
+                },
+                {
+                    "src":"../../../../Assets/Image/Rotina/chegada/3-lavando-as-maos.jpg",
+                    "width":"200px",
+                    "height":"",
+                    "title":""
 
-        "grupos": [
-            {
-                
-                "opcoes": [
-                    {
-                        "op": [
-                            
-                            { "src": "../../../../Assets/Image/Animais/buffalo.png" },
-                            { "flag": false },
-                            { "width": "" },
-                            { "height": "" },
-                            { "narracao": "" },
-                            { "id": "op1A" },
+                },
+                {
+                    "src":"../../../../Assets/Image/Rotina/chegada/4-esperar-coleguinhas-ate-as13h.png",
+                    "width":"150px",
+                    "height":"",
+                    "title":""
 
-                        ]
-                    },
-                    {
-                        "op": [
+                }
 
-                            { "src": "../../../../Assets/Image/Animais/baleiaJubarte.png" },
-                            { "flag": true },
-                            { "width": "" },
-                            { "height": "" },
-                            { "narracao": "" },
-                            { "id": "op1B" },
-
-                        ]
-                    },
-                    
-                ], 
-                    "class":"grupoA"
-            }, 
-            {
-                "opcoes": [
-                    {
-                        "op": [
-
-                            { "src": "../../../../Assets/Image/Animais/buffalo.png" },
-                            { "flag": false },
-                            { "width": "" },
-                            { "height": "" },
-                            { "narracao": "" },
-                            { "id": "op2A" },
-
-                        ]
-                    },
-                    {
-                        "op": [
-
-                            { "src": "../../../../Assets/Image/Animais/cachorro.png" },
-                            { "flag": true },
-                            { "width": "" },
-                            { "height": "" },
-                            { "narracao": "" },
-                            { "narracao": "op2B" },
-
-                        ]
-                    }
-                    
-                ], 
-                "class":"grupoB"
-            },
-            {
-                "opcoes": [
-                    {
-                        "op": [
-
-                            { "src": "../../../../Assets/Image/Animais/baleiaJubarte.png" },
-                            { "flag": false },
-                            { "width": "" },
-                            { "height": "" },
-                            { "narracao": "" },
-                            { "id": "op3A" },
-
-                        ]
-                    },
-                    {
-                        "op": [
-
-                            { "src": "../../../../Assets/Image/Animais/carneiro.png" },
-                            { "flag": true },
-                            { "width": "" },
-                            { "height": "" },
-                            { "narracao": "" },
-                            { "narracao": "op3B" },
-
-                        ]
-                    }
-                    
-                ], 
-                "class":"grupoC"
-            },
-            {
-                "opcoes": [
-                    {
-                        "op": [
-
-                            { "src": "../../../../Assets/Image/Animais/cavalo.png" },
-                            { "flag": true },
-                            { "width": "" },
-                            { "height": "" },
-                            { "narracao": "" },
-                            { "id": "op4A" },
-
-                        ]
-                    },
-                    {
-                        "op": [
-
-                            { "src": "../../../../Assets/Image/Animais/cachorro.png" },
-                            { "flag": false },
-                            { "width": "" },
-                            { "height": "" },
-                            { "narracao": "" },
-                            { "narracao": "op4B" },
-
-                        ]
-                    }
-                    
-                ], 
-                "class":"grupoD"
-            }
-
-        ]
-    },
+               ],
     
-]
+        "opcoes":{
+            "opA":{
+                "src":"../../../../Assets/Image/Rotina/Atividade em Grupo/hora_da_roda.png", 
+                "flag":"false"
+            }, 
+            "opB":{
+                "src":"../../../../Assets/Image/Rotina/Atividade em Grupo/hora_da_roda.png", 
+                "flag":""
+            }
+        }
+        
+       },
+       {
+            "id": "item02",
+            "title": "AO CHEGAR À ESCOLA VOCÊ ENCONTRA A PROFESSORA, GUARDA A MOCHILA, ESPERA OS COLEGAS CHEGAREM E",
+            "imagens":[
+                
+                    {
+                        "src":"../../../../Assets/Image/Rotina/chegada/1-prof-recebendo-o-aluno.jpg",
+                        "wdth":"",
+                        "heght":"",
+                        "title":""
 
-*/
-var itens = [
-    {
-        "id": "item01",
-        "title": "",
-        "imagem01": "",
-        "imagem02": "",
-        "imagem03": "",
-        "opcoes": [
-            { "opcao": "opcaoA", "src": "", "flag": "true" },
-            { "opcao": "opcaoA", "src": "", "flag": "false" }
-        ],
-        "modal": [
-            {
-                "mod": {
-                    "src": "",
-                    "flag": true
-                }
-            },
-            {
-                "mod": {
-                    "src": "",
-                    "flag":false
+                    },
+                    {
+                        "src":"../../../../Assets/Image/Rotina/chegada/1-prof-recebendo-o-aluno.jpg",
+                        "wdth":"",
+                        "heght":"",
+                        "title":""
+
+                    },
+                    {
+                        "src":"../../../../Assets/Image/Rotina/chegada/1-prof-recebendo-o-aluno.jpg",
+                        "wdth":"",
+                        "heght":"",
+                        "title":""
+
+                    },
+                    {
+                        "src":"../../../../Assets/Image/Rotina/chegada/1-prof-recebendo-o-aluno.jpg",
+                        "wdth":"",
+                        "heght":"",
+                        "title":""
+
+                    }
+
+                ],
+        
+            "opcoes":{
+                "opA":{
+                    "src":"../../../../Assets/Image/Rotina/Atividade em Grupo/hora_da_roda.png", 
+                    "flag":"false"
+                }, 
+                "opB":{
+                    "src":"", 
+                    "flag":""
                 }
             }
+            
+       },
+       {
+        "id": "item02",
+        "title": "AO CHEGAR À ESCOLA VOCÊ ENCONTRA A PROFESSORA, GUARDA A MOCHILA, ESPERA OS COLEGAS CHEGAREM E",
+        "imagens":[
+            
+                {
+                    "src":"../../../../Assets/Image/Rotina/chegada/1-prof-recebendo-o-aluno.jpg",
+                    "wdth":"",
+                    "heght":"",
+                    "title":""
 
-        ]
-    },
-    {
-        "id": "item01",
-        "title": "",
-        "imagem01": "",
-        "imagem02": "",
-        "imagem03": "",
-        "opcoes": [
-            { "opcao": "opcaoA", "src": "", "flag": "true" },
-            { "opcao": "opcaoA", "src": "", "flag": "false" }
-        ],
-        "modal": [
-            {
-                "mod": {
-                    "src": "",
-                    "flag": true
+                },
+                {
+                    "src":"../../../../Assets/Image/Rotina/chegada/1-prof-recebendo-o-aluno.jpg",
+                    "wdth":"",
+                    "heght":"",
+                    "title":""
+
+                },
+                {
+                    "src":"../../../../Assets/Image/Rotina/chegada/1-prof-recebendo-o-aluno.jpg",
+                    "wdth":"",
+                    "heght":"",
+                    "title":""
+
+                },
+                {
+                    "src":"../../../../Assets/Image/Rotina/chegada/1-prof-recebendo-o-aluno.jpg",
+                    "wdth":"",
+                    "heght":"",
+                    "title":""
+
                 }
-            },
-            {
-                "mod": {
-                    "src": "",
-                    "flag":false
-                }
+
+               ],
+    
+        "opcoes":{
+            "opA":{
+                "src":"../../../../Assets/Image/Rotina/Atividade em Grupo/hora_da_roda.png", 
+                "flag":"false"
+            }, 
+            "opB":{
+                "src":"", 
+                "flag":""
             }
-
-        ]
-    },
-    {
-        "id": "item01",
-        "title": "",
-        "imagem01": "",
-        "imagem02": "",
-        "imagem03": "",
-        "opcoes": [
-            { "opcao": "opcaoA", "src": "", "flag": "true" },
-            { "opcao": "opcaoA", "src": "", "flag": "false" }
-        ],
-        "modal": [
-            {
-                "mod": {
-                    "src": "",
-                    "flag": true
-                }
-            },
-            {
-                "mod": {
-                    "src": "",
-                    "flag":false
-                }
-            }
-
-        ]
-    },
-    {
-        "id": "item01",
-        "title": "",
-        "imagem01": "",
-        "imagem02": "",
-        "imagem03": "",
-        "opcoes": [
-            { "opcao": "opcaoA", "src": "", "flag": "true" },
-            { "opcao": "opcaoA", "src": "", "flag": "false" }
-        ],
-        "modal": [
-            {
-                "mod": {
-                    "src": "",
-                    "flag": true
-                }
-            },
-            {
-                "mod": {
-                    "src": "",
-                    "flag":false
-                }
-            }
-
-        ]
-    }
-
+        }
+        
+       }
 ]

@@ -16,7 +16,7 @@ var regrasTransito = function () {
     }
 
     function carregaDados(item) {
-          
+
 
         var display = 'none';
         if (count == 0) {
@@ -24,76 +24,87 @@ var regrasTransito = function () {
         }
         count++;
 
-        var dados = `
-        <section>
-        <h1>
-            AO CHEGAR À ESCOLA VOCÊ SE DESPEDE DA MAMÃE, GUARDA A MOCHILA, ESPERA OS COLEGAS CHEGAREM E
-        </h1>
-
+        var itens = `
+        <div id="opcoes${i}">
         <div class="container" style="position: relative; top: 100px;">
             <div class="card-columns d-flex justify-content-center" style="width: 1000px; height: 500px;">
-                <div class="card" style=" 
-                            border: 1px solid black;
-                            background: url('../../../../Assets/Image/Rotina/Almoco/almoco.jpg'); 
-                            background-repeat: no-repeat;
-                            background-position: center; 
-                            background-size: 300px 150px;
-                            width: 300px; 
-                            height: 150px;
-                        ">
+                <div class="card" id="card" style=" 
+                                border: 5px solid white;
+                                background: url('${item.opcoes.opA.src}'); 
+                                background-repeat: no-repeat;
+                                background-position: center; 
+                                background-size: 300px 150px;
+                                width: 300px; 
+                                height: 150px;
+                ">
                 </div>
-                <div class="card" style=" 
-                            border: 1px solid black;
-                            background: url('../../../../Assets/Image/Rotina/Almoco/almoco.jpg'); 
-                            background-repeat: no-repeat;
-                            background-position: center; 
-                            background-size: 300px 150px;
-                            width: 300px; 
-                            height: 150px;
-                        ">
-                </div>
-
-                <div class="card" style=" 
-                            border: 1px solid black;
-                            background: url('../../../../Assets/Image/Rotina/Almoco/almoco.jpg'); 
-                            background-repeat: no-repeat;
-                            background-position: center; 
-                            background-size: 300px 150px;
-                            width: 300px; 
-                            height: 150px;
-                        ">
+                <div class="card" id="card" style=" 
+                                border: 5px solid white;
+                                background: url('${item.opcoes.opB.src}'); 
+                                background-repeat: no-repeat;
+                                background-position: center; 
+                                background-size: 300px 150px;
+                                width: 300px; 
+                                height: 150px;
+                ">
                 </div>
             </div>
         </div>
-        </div>
 
-        <div class="container" style="position: relative; top: -200px;">
-            <div class="card-columns d-flex justify-content-center" style="width: 1000px; height: 500px;">
+        `; 
+
+        var dados = `
+        <section>
+            <h1>${item.title}</h1>
+            <div class="container" style="position: relative; top: 100px;">
+                <div class="card-columns d-flex justify-content-center" style="width: 1000px; height: 500px;">
                 <div class="card" style=" 
-                            border: 1px solid black;
-                            background: url('../../../../Assets/Image/Rotina/Almoco/almoco.jpg'); 
-                            background-repeat: no-repeat;
-                            background-position: center; 
-                            background-size: 300px 150px;
-                            width: 300px; 
-                            height: 150px;
-                        ">
+                                border: 5px solid white;
+                                background: url('${item.imagens[0].src}'); 
+                                background-repeat: no-repeat;
+                                background-position: center; 
+                                background-size: ${item.imagens[0].width} ${item.imagens[0].width};
+                                width: 300px; 
+                                height: 150px;
+                    ">
+                    </div>
+                    <div class="card" style=" 
+                                border: 5px solid white;
+                                background: url('${item.imagens[1].src}'); 
+                                background-repeat: no-repeat;
+                                background-position: center; 
+                                background-size: ${item.imagens[1].width} ${item.imagens[1].width};
+                                width: 300px; 
+                                height: 150px;
+                            ">
+                    </div>
+
+                    <div class="card" style=" 
+                                border: 5px solid white;
+                                background: url('${item.imagens[2].src}'); 
+                                background-repeat: no-repeat;
+                                background-position: center; 
+                                background-size: ${item.imagens[2].width} ${item.imagens[2].width};
+                                width: 300px; 
+                                height: 150px;
+                            ">
+                    </div>
+                    <div class="card" style=" 
+                                border: 5px solid white;
+                                background: url('${item.imagens[3].src}'); 
+                                background-repeat: no-repeat;
+                                background-position: center; 
+                                background-size: ${item.imagens[3].width} ${item.imagens[3].width};
+                                width: 300px; 
+                                height: 150px;
+                            ">
+                    </div>
                 </div>
-                <div class="card" style=" 
-                            border: 1px solid black;
-                            background: url('../../../../Assets/Image/Rotina/Almoco/almoco.jpg'); 
-                            background-repeat: no-repeat;
-                            background-position: center; 
-                            background-size: 300px 150px;
-                            width: 300px; 
-                            height: 150px;
-                        ">
-                </div>
+                <div style="position: relative; top:-350px;left:-100px;">`+ itens+`</div>
+
             </div>
-        </div>
-        <br>
-
-    </section>
+           
+        </section>
     `;
 
         i++;
@@ -109,7 +120,7 @@ var isHide = function () {
     $(element).is(":visible");
 
 }
-var onMouseLeave = function(element){ 
+var onMouseLeave = function (element) {
     var audio = $(element).find("audio");
     $(audio)[0].pause();
     audio[0].currentTime = 0;
@@ -120,9 +131,9 @@ var onMouseEnter = function (element) {
     debugger;
     var audio = $(element).find("audio");
     $(audio)[0].play();
-    
+
     $(element).css('background-color', '#FFCC33');
-} 
+}
 var checkValue = function (e) {
     console.log(e);
 
@@ -158,20 +169,20 @@ var checkValue = function (e) {
 var renderizaPartidaAnterior = function (event) {
     console.log(event);
     var path = event.path || (event.composedPath && event.composedPath());
-    var foundSection; 
+    var foundSection;
     var foundDiv;
     path.forEach(function (element) {
-        if(element.tagName == "SECTION"){
-            foundSection = element; 
+        if (element.tagName == "SECTION") {
+            foundSection = element;
         }
     });
 
-    if(typeof foundSection.children[0].children[1] == "undefined"){
-        $("#"+foundSection.children[1].id ).hide();      
-    }else{
-        $("#"+foundSection.children[0].children[1].children[1].id ).hide();
+    if (typeof foundSection.children[0].children[1] == "undefined") {
+        $("#" + foundSection.children[1].id).hide();
+    } else {
+        $("#" + foundSection.children[0].children[1].children[1].id).hide();
     }
-    $("#" +foundSection.children[0].children[0].id).show(); 
+    $("#" + foundSection.children[0].children[0].id).show();
 }
 var renderizaPartidaPosterior = function (event) {
     var idNextSection = "";
@@ -196,101 +207,4 @@ var renderizaPartidaPosterior = function (event) {
     var idCurrentlySection = path[index].id;
     $("#" + idCurrentlySection).hide();
 }
-
-
-/*var j = 0//ath.floor(Math.random() * 3) + 0;
-var count = 0;
-var dados = '';
-var opcoes = '';
-
-var rotinas = function (j) {
-    var count = 0;
-
-
-    var carregaDados = function (j) {
-
-        dados += `<div class="opcoes", id="${itens[j].ID}">`;
-
-        const element = itens[j];
-
-        for (let k = 0; k < element.Imagens.length; k++) {
-
-            const images = element.Imagens[k];
-
-            for (let x = 0; x < images.Imagem.length; x++) {
-
-                const image = images.Imagem[x];
-
-                    dados+=`<div class="row" id="${image.ID}">`
-                    dados+=    `<div class="col-sm-3">`
-                    dados+=      `<div class="card">`
-                    dados+=        `<div class="card-body">`
-                    dados+=          `<img src="${image.src}" width="150" height="200" alt="">`
-                    dados+=          `<audio src="${image.narracao}"></audio>` 
-                    dados+=        `</div>`
-                    dados+=      `</div>`      
-                    dados+=    `</div>`     
-            }
-        }
-        dados += `</div>`;
-
-
-    }
-
-    this.init = function () {
-        carregaDados(j);
-
-        $(".sequencia").append(dados);
-        $(".grupoB").hide();
-
-        $(document).ready(function () {
-            setTimeout(function () {
-                $('#sequencia').hide();
-            }, 7000);
-        });
-       // $("#sequencia").removeClass("preload");
-    }
-
-    init();
-}
-    ;
-rotinas(j);
-
-$("a").attr('class', function () {
-
-    $(this).on("click", function () {
-        var flag = $(this).attr('data');
-        if ($(this).attr('class') === 'grupoA') {
-            if (flag === 'true') {
-                $(".sequencia").append(this.innerHTML)
-                $(".grupoB").show();
-                $(".grupoA").hide();
-
-            }
-        } else {
-            if (flag === 'true') {
-                $(".sequencia").append(this.innerHTML)
-                $(".grupoB").hide();
-             
-            }
-
-
-        }
-
-    });
-});
-var onMouseLeave = function(element){ 
-    var audio = $(element).find("audio");
-    $(audio)[0].pause();
-    audio[0].currentTime = 0;
-    $(element).css('background-color', 'white');
-    $(element).css('background-color', '#CCCCFF');
-}
-var onMouseEnter = function (element) {
-    debugger;
-    var audio = $(element).find("audio");
-    $(audio)[0].play();
-    
-    $(element).css('background-color', '#FFCC33');
-}*/ 
 
