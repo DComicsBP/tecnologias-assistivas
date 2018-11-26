@@ -43,7 +43,7 @@ var itens = [
             }, 
             "opB":{
                 "src":"../../../../Assets/Image/Rotina/Atividade em Grupo/hora_da_roda.png", 
-                "flag":""
+                "flag":"true"
             }
         }
         

@@ -1,9 +1,6 @@
 var count = 0;
 let i = 0;
 
-var checkSection = function () {
-
-}
 var regrasTransito = function () {
 
 
@@ -15,7 +12,7 @@ var regrasTransito = function () {
         });
     }
 
-    var lista = function(item){
+    var lista = function(item,i){
         return `
         <section id=${item.id}>
             <h1>${item.title}</h1>
@@ -66,13 +63,13 @@ var regrasTransito = function () {
                 <div style="position: relative; top:-350px;left:-100px;">`+ opcoes(item) +`</div>
 
             </div>
-           
+           `+ model(item,i) +`
         </section>
     `;
 
     }
 
-   var opcoes = function(item){
+   var opcoes = function(item,i){
     return  `
     <div id="opcoes${i}">
     <div class="container" style="position: relative; top: 100px;">
@@ -85,8 +82,9 @@ var regrasTransito = function () {
                             background-size: 300px 150px;
                             width: 300px; 
                             height: 150px;
-            ">
+                "data-flag="${item.opcoes.opA.flag}" onclick="checkValue(event)">
             </div>
+
             <div class="card" id="card" style=" 
                             border: 5px solid white;
                             background: url('${item.opcoes.opB.src}'); 
@@ -95,81 +93,113 @@ var regrasTransito = function () {
                             background-size: 300px 150px;
                             width: 300px; 
                             height: 150px;
-            ">
+                "data-flag="${item.opcoes.opA.flag}" onclick="checkValue(event)>
             </div>
         </div>
     </div>
-
     `; 
 
-   } 
+   };  
 
-    function carregaDados(item) {
+   var model = function(item, i){
+    return `
+    <div id="modRespostaCorreta${i}">
+            <h1>MUITO BEM! CONTINUE A JOGAR!</h1>
+            <div class="container" style="position: relative; top: 100px;">
+                <div class="card-columns d-flex justify-content-center" style="width: 1000px; height: 500px;">
+                    <div class="card" style=" 
+                                            border: 5px solid white;
+                                            background: url('${item.imagens[0].src}'); 
+                                            background-repeat: no-repeat;
+                                            background-position: center; 
+                                            background-size: ${item.imagens[0].width} ${item.imagens[0].height};
+                                            width: 300px; 
+                                            height: 150px;
+                    ">
+                    </div>
+                    <div class="card" style=" 
+                                            border: 5px solid white;
+                                            background: url('${item.imagens[0].src}'); 
+                                            background-repeat: no-repeat;
+                                            background-position: center; 
+                                            background-size: ${item.imagens[0].width} ${item.imagens[0].height};
+                                            width: 300px; 
+                                            height: 150px;
+                    ">
+                    </div>
+                    <div class="card" style=" 
+                                border: 5px solid white;
+                                background: url('${item.imagens[0].src}'); 
+                                background-repeat: no-repeat;
+                                background-position: center; 
+                                background-size: ${item.imagens[0].width} ${item.imagens[0].height};
+                                width: 300px; 
+                                height: 150px;
+                    ">
+                    </div>
+                    <div class="card" style=" 
+                                    border: 5px solid white;
+                                    background: url('${item.imagens[0].src}'); 
+                                    background-repeat: no-repeat;
+                                    background-position: center; 
+                                    background-size: ${item.imagens[0].width} ${item.imagens[0].height};
+                                    width: 300px; 
+                                    height: 150px;
+                    ">
+                    </div>
+                </div>
+            </div>
+            <img src="../../../../Assets/Image/DepoisDasRespostas/emojiCorreto.jpg" alt="" srcset="" style="position:relative; top:-200px;">
 
+            <button type="button" class="btn btn-success" style="position:relative; left:-150px" width="100" heigth="100">CONTINUAR</button>
+        </div>
+        <div id="modRespostaIncorreta">
+            <h1>NÃO FOI DESSA VEZ. TENTE NOVAMENTE, VOCÊ CONSEGUE!</h1>
+            <img src="../../../../Assets/Image/DepoisDasRespostas/emojiPensativo.jpeg" alt="" srcset="" style="position:relative; top: 50px; left: 50px">
+            <button type="button" class="btn btn-secondary" style="position:relative; left:-170px;top: 250px" width="100"
+            heigth="100">VOLTAR</button>
+        </div> 
+    `; 
+   }; 
 
-        var display = 'none';
-        if (count == 0) {
-            display = 'block';
-        }
+   function carregaDados(item) {
         count++;
+        
+        $("#render").append(lista(item,i).trim());
         i++;
-        $("#render").append(lista(item).trim());
-
-
     }
     init();
 }
-regrasTransito();
-var isHide = function () {
-    $(element).is(":visible");
 
-}
+regrasTransito();
+
 var onMouseLeave = function (element) {
     var audio = $(element).find("audio");
     $(audio)[0].pause();
     audio[0].currentTime = 0;
     $(element).css('background-color', 'white');
     $(element).css('background-color', '#CCCCFF');
-}
+};
+
 var onMouseEnter = function (element) {
     debugger;
     var audio = $(element).find("audio");
     $(audio)[0].play();
 
     $(element).css('background-color', '#FFCC33');
-}
+};
+
 var checkValue = function (e) {
-    console.log(e);
+    console.log('Event ==>', e)
+    var flag = e.target.attributes[3]; 
+        if (flag === 'true') {
 
-    var modals = "";
-    var idJogo = "";
-    var root = e.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
-    if (typeof root.children[0].children[0] === "undefined") {
-        root = e.parentElement.parentElement.parentElement.parentElement.parentElement;
-        modals = root.children[1];
-    } else {
-        modals = root.children[0].children[1];
-
+        } else if (flag === 'false') {
+        
     }
-    var jogo = root.children[0].children[0];
-    var idJogo = jogo.id;
-    var idModals = modals.id;
-    var modalTrue = modals.children[0].id;
-    var modalFalse = modals.children[1].id;
+    
+};
 
-    $("#" + idJogo).hide();
-    $("#" + idModals).show();
-
-    let valor = e.attributes[3].value;
-    if (valor == 'true') {
-        $("#" + modalTrue).show();
-        $("#" + modalFalse).hide();
-    } else {
-        $("#" + modalFalse).show();
-        $("#" + modalTrue).hide();
-
-    }
-}
 var renderizaPartidaAnterior = function (event) {
     console.log(event);
     var path = event.path || (event.composedPath && event.composedPath());
@@ -187,7 +217,8 @@ var renderizaPartidaAnterior = function (event) {
         $("#" + foundSection.children[0].children[1].children[1].id).hide();
     }
     $("#" + foundSection.children[0].children[0].id).show();
-}
+};
+
 var renderizaPartidaPosterior = function (event) {
     var idNextSection = "";
     var index = 5;
@@ -210,5 +241,5 @@ var renderizaPartidaPosterior = function (event) {
 
     var idCurrentlySection = path[index].id;
     $("#" + idCurrentlySection).hide();
-}
+};
 
