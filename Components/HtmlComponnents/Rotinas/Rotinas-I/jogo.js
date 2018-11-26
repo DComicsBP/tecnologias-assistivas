@@ -60,11 +60,10 @@ var regrasTransito = function () {
                             ">
                     </div>
                 </div>
-                <div style="position: relative; top:-350px;left:-100px;">`+ opcoes(item) +`</div>
+
 
             </div>
-           `+ model(item,i) +`
-        </section>
+                   </section>
     `;
 
     }
@@ -165,7 +164,7 @@ var regrasTransito = function () {
    function carregaDados(item) {
         count++;
         
-        $("#render").append(lista(item,i).trim());
+        $("#render").append(lista(item,i).trim()).append(opcoes(item,i)).append(model(item,i));
         i++;
     }
     init();
