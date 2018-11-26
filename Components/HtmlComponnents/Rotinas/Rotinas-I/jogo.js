@@ -15,46 +15,9 @@ var regrasTransito = function () {
         });
     }
 
-    function carregaDados(item) {
-
-
-        var display = 'none';
-        if (count == 0) {
-            display = 'block';
-        }
-        count++;
-
-        var itens = `
-        <div id="opcoes${i}">
-        <div class="container" style="position: relative; top: 100px;">
-            <div class="card-columns d-flex justify-content-center" style="width: 1000px; height: 500px;">
-                <div class="card" id="card" style=" 
-                                border: 5px solid white;
-                                background: url('${item.opcoes.opA.src}'); 
-                                background-repeat: no-repeat;
-                                background-position: center; 
-                                background-size: 300px 150px;
-                                width: 300px; 
-                                height: 150px;
-                ">
-                </div>
-                <div class="card" id="card" style=" 
-                                border: 5px solid white;
-                                background: url('${item.opcoes.opB.src}'); 
-                                background-repeat: no-repeat;
-                                background-position: center; 
-                                background-size: 300px 150px;
-                                width: 300px; 
-                                height: 150px;
-                ">
-                </div>
-            </div>
-        </div>
-
-        `; 
-
-        var dados = `
-        <section>
+    var lista = function(item){
+        return `
+        <section id=${item.id}>
             <h1>${item.title}</h1>
             <div class="container" style="position: relative; top: 100px;">
                 <div class="card-columns d-flex justify-content-center" style="width: 1000px; height: 500px;">
@@ -100,16 +63,57 @@ var regrasTransito = function () {
                             ">
                     </div>
                 </div>
-                <div style="position: relative; top:-350px;left:-100px;">`+ itens+`</div>
+                <div style="position: relative; top:-350px;left:-100px;">`+ opcoes(item) +`</div>
 
             </div>
            
         </section>
     `;
 
-        i++;
+    }
 
-        $("#render").append(dados.trim());
+   var opcoes = function(item){
+    return  `
+    <div id="opcoes${i}">
+    <div class="container" style="position: relative; top: 100px;">
+        <div class="card-columns d-flex justify-content-center" style="width: 1000px; height: 500px;">
+            <div class="card" id="card" style=" 
+                            border: 5px solid white;
+                            background: url('${item.opcoes.opA.src}'); 
+                            background-repeat: no-repeat;
+                            background-position: center; 
+                            background-size: 300px 150px;
+                            width: 300px; 
+                            height: 150px;
+            ">
+            </div>
+            <div class="card" id="card" style=" 
+                            border: 5px solid white;
+                            background: url('${item.opcoes.opB.src}'); 
+                            background-repeat: no-repeat;
+                            background-position: center; 
+                            background-size: 300px 150px;
+                            width: 300px; 
+                            height: 150px;
+            ">
+            </div>
+        </div>
+    </div>
+
+    `; 
+
+   } 
+
+    function carregaDados(item) {
+
+
+        var display = 'none';
+        if (count == 0) {
+            display = 'block';
+        }
+        count++;
+        i++;
+        $("#render").append(lista(item).trim());
 
 
     }
