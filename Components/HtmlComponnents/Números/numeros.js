@@ -1,5 +1,7 @@
-var object = `
-    `
+var object = 
+`
+    
+`
 
     var numeros = function () {
         var data = "";
@@ -14,12 +16,11 @@ var object = `
                 data += `
                 <br />
                 <br />
-                <section id="${itens[index].id}" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
+                <section id="${itens[index].id}" onmouseenter="onMouseEnter(event)" onmouseleave="onMouseLeave(event)">
                     <h2>${itens[index].numero}</h2>
                     <img src="${itens[index].digito}" id=number>
-                    <img src="${itens[index].dedos}" id=number><br>
-                    <h3>Ouvir</h3>
-                    <audio src="${itens[index].audio}" controls controls loop></audio><br><hr>
+                    <img src="${itens[index].dedos}" id=number><br><hr>
+                    <audio src="${itens[index].audio}"  loop></audio><br><hr>
                 </section>
                     `;
             }
