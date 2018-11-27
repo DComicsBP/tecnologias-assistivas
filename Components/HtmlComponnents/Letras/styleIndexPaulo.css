@@ -9,7 +9,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         font-stretch: expanded;
-        font-size: xx-large;
+        font-size: 50px;
          
       }
 
@@ -22,7 +22,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         font-stretch: expanded;
-        font-size: xx-large;
+        font-size: 35px;
          
       }
 
@@ -35,7 +35,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         font-stretch: expanded;
-        font-size:smaller;
+        font-size: 20px;
       }
 
 
@@ -56,23 +56,17 @@
         align-items: center;
         justify-content: center;
     }
-    
-
-
-
-    audio {
-      border-block-end-color: goldenrod
-    }
+  
     
     #letras{
       width: 450px;
-      height: 350px;
+      height: 300px;
 
     }
 
     div{
       width: 500px;
-      height: 450px;
+      height: 400px;
 
     }
 

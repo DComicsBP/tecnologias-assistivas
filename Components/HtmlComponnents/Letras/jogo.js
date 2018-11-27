@@ -3,7 +3,7 @@ var objeto =
 
 `
 
-var animais = function () {
+var letras = function () {
     var data = "";
 
 
@@ -19,8 +19,8 @@ var animais = function () {
             <section id="${index}" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
                 <img src="${itens[index].Imagem}" width="${itens[index].Width}" heigth="${itens[index].Heigth}"><br>
                 <h2>${itens[index].Nome}</h2>
-                <audio src="${itens[index].Audio}" controls controls loop></audio><br><br>
-                <hr>
+                <audio src="${itens[index].Audio}"loop></audio><br><br>
+            
             </section>
 
                 `;
@@ -31,7 +31,7 @@ var animais = function () {
     
     init();
 }
-animais();
+letras();
 
 
 var onMouseLeave = function(element){ 

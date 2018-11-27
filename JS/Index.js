@@ -4,6 +4,7 @@ $("a").on("click", (data)=>{
         case "Animais": Animais(); break; 
         case "Estacoes": Estacoes(); break; 
         case "Cidade": Cidade(); break; 
+        case "Número": numeros(); break;
         default: break; 
     }
 });
