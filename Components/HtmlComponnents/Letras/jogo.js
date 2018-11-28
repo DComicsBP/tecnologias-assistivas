@@ -17,9 +17,11 @@ var letras = function () {
             <br />
             <br />
             <section id="${index}" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
-                <img src="${itens[index].Imagem}" width="${itens[index].Width}" heigth="${itens[index].Heigth}"><br>
+                <hr><br>
+                <img src="${itens[index].Imagem}" width="${itens[index].Width}" heigth="${itens[index].Heigth}"><br><br>
                 <h2>${itens[index].Nome}</h2>
-                <audio src="${itens[index].Audio}"loop></audio><br><br>
+                <audio src="${itens[index].Audio}"loop></audio><br><br><br>
+                <hr>
             
             </section>
 

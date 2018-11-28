@@ -62,25 +62,24 @@
       border-block-end-color: goldenrod
     }
     
-    #num{
-      position: absolute;
-      width: 350px;
-      height: 350px;
+    #num{ 
+      position: relative;
+      width: 450px;
+      height: 750px;
       left: 15%;
 
     }
 
     #dedos{
-      position: absolute;
-      width: 350px;
-      height: 350px;
+      position: relative;
+      width: 450px;
+      height: 750px;
       right: 15%;
     }
 
     div{
-      width: 80%;
-      height: 430px;
-
+      width: 100%;
+      height: 1000px;
     }
 
 

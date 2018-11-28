@@ -12,6 +12,7 @@
                 <br />
                 <br />
                 <section id="$${itens[index].id}" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
+                    <hr>
                     <h2>${itens[index].nomeAnimal}</h2>
                     <img src="${itens[index].imagemAnimal}" id=Animais>
                     <audio src="${itens[index].audio}" loop></audio><hr>

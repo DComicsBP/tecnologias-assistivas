@@ -17,10 +17,11 @@ var object =
                 <br />
                 <br />
                 <section id="${itens[index].id}" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
-                    <h2>${itens[index].numero}</h2>
+                    <hr>
+                    <h2>${itens[index].numero}</h2><br><br>
                     <img src="${itens[index].digito}" id=number>
-                    <img src="${itens[index].dedos}" id=number><br><hr>
-                    <audio src="${itens[index].audio}"  loop></audio><br><hr>
+                    <img src="${itens[index].dedos}" id=number><br>
+                    <audio src="${itens[index].audio}"  loop></audio><br><br><hr>
                 </section>
                     `;
             }
