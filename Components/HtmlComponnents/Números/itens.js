@@ -62,7 +62,6 @@ var itens = [
         "dedos": "../../../Assets/Image/Números/9dedos.PNG",
         "audio": "../../../Assets/Audio/Números_áudio/nove.mp3"
     },
-
     {
         "id": "numero10",
         "numero": "DEZ",
