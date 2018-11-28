@@ -114,16 +114,16 @@ var itens = [
         "audio": "../../../Assets/Audio/Instrumentos Sons/Tuba.mp3",
     },
     {
-        "id": "violino",
+        "id": "violao",
         "nome": "VIOLINO",
         "imagem": "../../../Assets/Image/InstrumentosMusicaisFotos/Violino.PNG",
         "audio": "../../../Assets/Audio/Instrumentos Sons/Violino.mp3",
     },
     {
-        "id": "violino",
-        "nome": "VIOLINO",
+        "id": "violao",
+        "nome": "VIOLÃO",
         "imagem": "../../../Assets/Image/InstrumentosMusicaisFotos/Violão.PNG",
-        "audio": "../../../Assets/Audio/Instrumentos Sons/Violino.mp3",
+        "audio": "../../../Assets/Audio/Instrumentos Sons/Violao.mp3",
     },
     {
         "id": "xilofone",

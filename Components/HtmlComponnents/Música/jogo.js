@@ -13,7 +13,7 @@ var animais = function () {
                 <section onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
                     <h2>${itens[index].nome}</h2>
                     <img src="${itens[index].imagem}" width="500" heigth="500">
-                    <audio src="${itens[index].audio}"  loop></audio><br>
+                    <audio src="${itens[index].audio}"  loop></audio><br><br/>
                 </section>  
                 `;
         }   
@@ -22,7 +22,7 @@ var animais = function () {
     }
     
     init();
-}
+}   
 animais();
 
 var onMouseLeave = function(element){ 
