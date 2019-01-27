@@ -175,6 +175,7 @@ var renderizaPartidaAnterior = function (event) {
     $("#" +foundSection.children[0].children[0].id).show(); 
 }
 var renderizaPartidaPosterior = function (event) {
+    debugger; 
     var idNextSection = "";
     var index = 5;
     var path = event.path || (event.composedPath && event.composedPath());

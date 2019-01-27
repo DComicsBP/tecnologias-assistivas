@@ -5,6 +5,7 @@ var opcoes = '';
 var rotinas = function (j) {
 
     var carregaDados = function (j) {
+        
         dados += `<div id="${itens[j].ID}" class="row">`;
 
         const element = itens[j];
@@ -46,13 +47,13 @@ var rotinas = function (j) {
         }
     }
 
-    this.init = function () {
+    this.init = function (j) {
         carregaDados(j);
             render(j); 
             j++; 
     }
 
-    init();
+    init(j);
 }
 
 rotinas(j);
@@ -67,6 +68,7 @@ rotinas(j);
 }
 
 function remove(event){
+    debugger;
     console.log('Event ===> ', event);
     var flag =  $("#"+event.currentTarget.attributes.id.value).attr("data");
 
